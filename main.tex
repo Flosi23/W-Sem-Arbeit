@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+
+% Set arial font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{minted}
+\graphicspath{{./images/}}
+
+
+\newtheorem{defin}{Definition}
+\newtheorem{example}{Beispiel}
+% Apparently a linespreach of 1.25 is equal to a 1.5 linespacing in word
+\linespread{1.25}
+
+\title{Computer Algebra Systeme}
+\author{Simon Weckler}
+
+\begin{document}
+\newcommand{\lab}[1]{(\ref{#1})}
+\maketitle
+
+\section{Benutzereingaben}
+Die einfachste Form, einen mathematischen Ausdruck auf einem Computer einzugeben, 
+ist unter der Verwendung der Symbole, welche einem auf der Tastatur schon zur Verfügung stehen. 
+Dabei gelten folgende Beziehungen zwischen den Zeichen und ihrer mathematischen Bedeutung:
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+  Zeichen               & Bedeutung         \\ \hline \hline
+  0 - 9                 & Ziffer            \\ \hline
+  +                     & Addition          \\ \hline
+  -                     & Subtraktion        \\ \hline
+  /                     & Division          \\ \hline
+  *                     & Multiplikation    \\ \hline
+  \textasciicircum      & Potenz            \\ \hline
+  a - z                 & Symbol (Variable) \\ \hline
+\end{tabular}
+\end{table}
+
+\noindent
+Es ist mit nur diesen Zeichen möglich, eine Großzahl von mathematischen Termen darzustellen 
+und ist deswegen ein simpler, aber effektiver Weg, um Benutzereingaben entgegenzunehmen.
+
+\subsection{Darstellung im Programm}
+\subsubsection{Darstellung als String}
+
+Der Benutzer kann einen mathematischen Ausdruck also in Form eines Strings eingeben. 
+Den String auch als Datenstruktur zur Darstellung des Ausdrucks im Programm zu 
+verwenden hat allerdings Nachteile. 
+Um zu beurteilen, ob eine Darstellung für einen Computer passend ist oder nicht, 
+muss zuerst definiert werden, welche Informationen das Programm benötigt,
+um mit dem Term arbeiten zu können.
+
+\begin{defin}
+  Um mit einem mathematischen Term arbeiten zu können muss ein Programm die Bedeutung
+  der einzelnen Zeichen sowie die Operatorrangfolge \lab{def:operatorrangfolge} kennen
+\label{def:programm_infos}
+\end{defin}
+
+\begin{defin}
+Unter der \textbf{Operatorrangfolge} oder \textbf{Operatorpräzedenz} ist die Ordnung zu verstehen, 
+in welcher die Operatoren eines Ausdrucks auszuwerten sind.
+In dem Term $3+4*5$ hat der Operator $+$ die geringste Priorität und der Operator $*$ die höchste. 
+Folglich muss $4*5$ vor $3+4$ ausgerechnet werden. 
+\label{def:operatorrangfolge}
+\end{defin}
+
+\noindent
+Für ein Programm existiert per se kein Unterschied zwischen dem Zeichen \textit{3} und \textit{+}. 
+Beide haben denselben Datentyp. Deswegen ist es erforderlich, immer das Zeichen zu untersuchen und 
+ihm seine jeweilige Bedeutung zuzuordnen. \newline
+Um die Operatorpräzedenz zu bestimmen, muss es über den String iterieren und ihn in Teile unterschiedlicher Priorität unterteilen.
+Sind diese beiden Schritte getan, kann das Programm Operationen auf dem Term ausführen. \newline
+Am Ende wird das Resultat der Operation wieder in einen String geschrieben, da dies ja der gewählte Datentyp ist. 
+Das hat den Nachteil, dass alle gewonnen Informationen über die Bedeutung der Zeichen und die Priorität der Operatoren 
+wieder verloren gehen. Will man eine weitere Operation auf dem Term durchführen, 
+so muss man all diese Informationen noch einmal extrahieren. 
+Das ist ineffizient und führt zu mehr Komplexität im Code. \newline
+Der String ist folglich keine passende Datenstruktur um einen Ausdruck abzuspeichern
+
+\subsubsection{Darstellung als Baum}
+
+Ideal wäre also eine Datenstruktur, welche sowohl die Bedeutung der Zeichen als auch die Operatorrangfolge speichert,
+sodass diese nicht neu berechnet werden müssen. \newline
+Dafür ist es wichtig zu verstehen, dass jeder mathematische Ausdruck entweder als atomarer 
+oder zusammengesetzter Ausdruck klassifiziert werden kann.
+
+\begin{defin}
+Ein \textbf{atomarer Ausdruck} ist jeder Ausdruck, der kein Operator ist, also ganze Zahlen und Symbole. 
+Atomare Ausdrücke können nicht weiter vereinfacht werden.
+\label{def:atomarer_ausdruck}
+\end{defin}
+
+\begin{defin}
+Jeder \textbf{zusammengesetzte Ausdruck} besteht aus einem Operator und einem oder mehreren Operanden. 
+Zu diesen Ausdrücken zählen Summen, Produkte, Differenzen, Divisionen und Potenzen
+\label{def:zusammengesetzter_ausdruck}
+\end{defin}
+
+\noindent
+Man kann nun atomare und zusammengesetzte Ausdrücke und ihre Beziehungen zueinander in einem Baum darstellen.
+Dabei gelten folgende Regeln:
+
+\begin{defin}
+In einem \textbf{Baum mathematischer Ausdrücke} ist jeder Elternknoten ein zusammengesetzter Ausdruck. Die Kinder
+eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusammengesetzter_ausdruck} oder atomare 
+\lab{def:atomarer_ausdruck} Ausdrücke sein können. Alle Blätter des Baumes sind atomare Ausdrücke. \lab{def:atomarer_ausdruck}
+\label{def:baum}
+\end{defin}
+
+\newpage
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_1_baum.png}
+  \caption{Der Baum für den Term $3+4*5$}
+\end{figure}
+
+\begin{example}
+   An dem Baum für den Term $3+4*5$ kann man erkennen, dass die Operatorrangfolge \lab{def:operatorrangfolge}
+   in der Datenstruktur abgebildet wird. Da der Ausdruck $4*5$ ein Kind des Operators $+$ ist, muss dieser zuerst 
+   ausgewertet werden. In einem Baum mathematischer Ausdrücke \lab{def:baum} ist die Wurzel folglich immer
+   der Operator mit der geringsten Priorität.
+   Wie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke \lab{def:atomarer_ausdruck}.
+\end{example}
+
+\noindent
+Von welchem Datentyp die Blätter und Knoten sind, ist ganz von der eigenen Implementierung abhängig.
+In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes sein:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.25]{UML_Ausdruecke.png}
+  \caption{UML Diagramm aller Ausdrücke}
+\end{figure}
+
+\noindent
+Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt. 
+Wie einem vielleicht auffällt, ist auch der Bruch ein Operator. 
+Das ist darin begründet, dass ein Bruch genau genommen auch eine Operation (Division) ist, 
+allerdings eine, die nicht zu einer ganzen Zahl vereinfacht werden kann. 
+Im Baum wird ein Bruch also wie folgt dargestellt:
+
+\newpage
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.6]{trees/beispiel_baum_frac.png}
+  \caption{Ein Bruch im Baum mathematischer Ausdrücke}
+\end{figure}
+
+\subsection{Parsen}
+In einem Computeralgebrasystem wird ein Term also in Form eines Baumes dargestellt. 
+Für den Benutzer wäre es allerdings weder intuitiv noch einfach, einen Term als Baum anzugeben. 
+Die Eingabe als String sollte also beibehalten werden. 
+Folglich ist es erforderlich, die Zeichenkette nach Eingabe in einen Baum umzuwandeln.
+Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
+
+\begin{defin}
+  Die \textbf{konventionelle Struktur} eines Ausdrucks entspricht der Struktur vor der automatischen Vereinfachung. 
+  Diese Struktur ist auch die, die in der Mathematik verwendet wird. Hier gilt:
+
+  \begin{enumerate}
+    \item die Operatoren $+$ und $-$ haben entweder 1 oder 2 Operanten
+    \item die Operatoren $*$, $/$, und \textrm{\textasciicircum} haben immer 2 Operanten
+    \item die Operanden der Operatoren  sind Algebraische Ausdrücke
+  \end{enumerate}
+
+  \noindent
+  Jeder Ausdruck kann immer einem Klammerlevel zugeordnet werden. 
+  Standardmäßig ist das Klammerlevel 0. Befindet sich ein Ausdruck in runden Klammern, 
+  so erhöht sich sein Klammerlevel um 1. Der Ausdruck mit dem höheren Klammerlevel hat immer die höhere Priorität 
+  gegenüber einem Ausdruck mit niedrigerem Klammerlevel.
+  Es gelten folgende Regeln für die Operatorrangfolge \lab{def:operatorrangfolge} bei gleichem Klammerlevel:
+\end{defin}
+
+\end{document}
+
