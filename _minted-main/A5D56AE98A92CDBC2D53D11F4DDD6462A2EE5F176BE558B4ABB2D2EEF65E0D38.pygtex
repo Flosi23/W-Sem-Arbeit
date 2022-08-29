@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{exp}\PYG{p}{\PYGZgt{}}     \PYG{o}{::=} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{exp}\PYG{p}{\PYGZgt{}} + \PYG{p}{\PYGZlt{}}\PYG{n+nc}{exp}\PYG{p}{\PYGZgt{}} | \PYG{p}{\PYGZlt{}}\PYG{n+nc}{exp}\PYG{p}{\PYGZgt{}} \PYGZhy{} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{exp}\PYG{p}{\PYGZgt{}} |
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{term}\PYG{p}{\PYGZgt{}}    \PYG{o}{::=} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{term}\PYG{p}{\PYGZgt{}} * \PYG{p}{\PYGZlt{}}\PYG{n+nc}{term}\PYG{p}{\PYGZgt{}} | \PYG{p}{\PYGZlt{}}\PYG{n+nc}{term}\PYG{p}{\PYGZgt{}} / \PYG{p}{\PYGZlt{}}\PYG{n+nc}{term}\PYG{p}{\PYGZgt{}} | \PYG{p}{\PYGZlt{}}\PYG{n+nc}{factor}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{power}\PYG{p}{\PYGZgt{}}   \PYG{o}{::=} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{power}\PYG{p}{\PYGZgt{}} \PYGZca{} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{power}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{factor}\PYG{p}{\PYGZgt{}}  \PYG{o}{::=} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{int}\PYG{p}{\PYGZgt{}} | \PYGZlt{}symbol
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{int}\PYG{p}{\PYGZgt{}}     \PYG{o}{::=} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{digit}\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}\PYG{n+nc}{int}\PYG{p}{\PYGZgt{}} | \PYG{p}{\PYGZlt{}}\PYG{n+nc}{digit}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{digit}\PYG{p}{\PYGZgt{}}   \PYG{o}{::=} 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+\PYG{p}{\PYGZlt{}}\PYG{n+nc}{symbol}\PYG{p}{\PYGZgt{}}  \PYG{o}{::=} a | b | c | d | e | f | g | h | i | j | k | l | m | n |
+              o | p | q | s | t | u | v | w | x | y | z
+\end{Verbatim}

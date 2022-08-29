@@ -1,0 +1,23 @@
+{"rule":"DE_COMPOUND_COHERENCY","sentence":"^\\QDen String auch als Datenstruktur zur Darstellung des Ausdrucks im Programm zu verwenden hat allerdings Nachteile.\\E$"}
+{"rule":"DE_COMPOUND_COHERENCY","sentence":"^\\QAn dem Baum für den Term \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q kann man erkennen, dass die Operatorrangfolge def:operatorrangfolge in der Datenstruktur abgebildet wird.\\E$"}
+{"rule":"DE_COMPOUND_COHERENCY","sentence":"^\\QEs gelten folgende Regeln für die Operatorrangfolge def:operatorrangfolge bei gleichem Klammerlevel:\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qzu-sam-men-ge-setzt-er ma-the-ma-tisch-en ver-wen-den dar-zu-stel-len ent-ge-gen-zu-neh-men un-ter-such-en ato-ma-rer zu-ein-an-der Ope-ra-tor-rang-fol-ge er-for-der-lich Re-geln Im-ple-men-tie-rung\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\Qzu-sam-men-ge-setzt-er ma-the-ma-tisch-en ver-wen-den dar-zu-stel-len ent-ge-gen-zu-neh-men un-ter-such-en ato-ma-rer zu-ein-an-der Ope-ra-tor-rang-fol-ge er-for-der-lich Re-geln Im-ple-men-tie-rung\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QComputer Algebra Systeme Simon Weckler\\E$"}
+{"rule":"DE_COMPOUND_COHERENCY","sentence":"^\\QUm mit einem mathematischen Term arbeiten zu können muss ein Programm die Bedeutung der einzelnen Zeichen sowie die Operatorrangfolge def:operatorrangfolge kennen\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QUm mit einem mathematischen Term arbeiten zu können muss ein Programm die Bedeutung der einzelnen Zeichen sowie die Operatorrangfolge def:operatorrangfolge kennen\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdef:atomarer_ausdruck\\E$"}
+{"rule":"LEERZEICHEN_HINTER_DOPPELPUNKT","sentence":"^\\Qdef:atomarer_ausdruck\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\Qdef:atomarer_ausdruck\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QDie Kinder eines Elternknotens sind seine Operanden, welche Zusammengesetze def:zusammengesetzter_ausdruck oder atomare def:atomarer_ausdruck Ausdrücke sein können.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QDie Kinder eines Elternknotens sind seine Operanden, welche Zusammengesetze def:zusammengesetzter_ausdruck oder atomare def:atomarer_ausdruck Ausdrücke sein können.\\E$"}
+{"rule":"LEERZEICHEN_HINTER_DOPPELPUNKT","sentence":"^\\QDie Kinder eines Elternknotens sind seine Operanden, welche Zusammengesetze def:zusammengesetzter_ausdruck oder atomare def:atomarer_ausdruck Ausdrücke sein können.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QAn dem Baum für den Term \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q kann man erkennen, dass die Operatorrangfolge def:operatorrangfolge in der Datenstruktur abgebildet wird.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QWie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke def:atomarer_ausdruck.\\E$"}
+{"rule":"LEERZEICHEN_HINTER_DOPPELPUNKT","sentence":"^\\QWie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke def:atomarer_ausdruck.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QIn einem Baum mathematischer Ausdrücke def:baum ist die Wurzel folglich immer der Operator mit der geringsten Priorität.\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QEs gelten folgende Regeln für die Operatorrangfolge def:operatorrangfolge bei gleichem Klammerlevel:\\E$"}
+{"rule":"DE_CASE","sentence":"^\\QHöchste Priorität * / + - Niedrigste Priorität\\E$"}
+{"rule":"LEERZEICHEN_VOR_AUSRUFEZEICHEN_ETC","sentence":"^\\QZeichen Bedeutung ::= Ist definiert als | Oder < > Name einer Kategorie\\E$"}
+{"rule":"LEERZEICHEN_VOR_AUSRUFEZEICHEN_ETC","sentence":"^\\QZeichen Bedeutung ::= Ist definiert als | Oder <X> Name einer Kategorie X\\E$"}
+{"rule":"LEERZEICHEN_HINTER_DOPPELPUNKT","sentence":"^\\QZiel ist es nun, eine Backus-Naur-Form für einen mathematischen Ausdruck zu definieren, welche alle Aspekte der Definition eines mathematischen Ausdrucks in der konventionellen Struktur def:konventionelle_struktur berücksichtigt.\\E$"}
