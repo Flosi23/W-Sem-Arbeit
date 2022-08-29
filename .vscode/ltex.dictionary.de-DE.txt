@@ -1,1 +1,3 @@
 Operatorpräzedenz
+def
+Backus-Naur-Form

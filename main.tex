@@ -2,12 +2,15 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
+
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
 
 % Set arial font
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
+% Allow for special characters such as < >
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -18,18 +21,41 @@
 \usepackage{minted}
 \graphicspath{{./images/}}
 
+% Hypthenation rules
+\hyphenation{
+  zu-sam-men-ge-setzt-er 
+  ma-the-ma-tisch-en
+  ver-wen-den
+  dar-zu-stel-len
+  ent-ge-gen-zu-neh-men
+  un-ter-such-en
+  ato-ma-rer
+  zu-ein-an-der
+  Ope-ra-tor-rang-fol-ge
+  er-for-der-lich
+  Re-geln
+  Im-ple-men-tie-rung
+  ge-ne-rie-ren
+}
+
 
 \newtheorem{defin}{Definition}
+\newcommand{\lab}[1]{(Def. \ref{#1})}
+
 \newtheorem{example}{Beispiel}
+
 % Apparently a linespreach of 1.25 is equal to a 1.5 linespacing in word
 \linespread{1.25}
+% No indent for parapgraphs
+\setlength\parindent{0pt}
 
 \title{Computer Algebra Systeme}
 \author{Simon Weckler}
 
 \begin{document}
-\newcommand{\lab}[1]{(\ref{#1})}
+
 \maketitle
+\tableofcontents
 
 \section{Benutzereingaben}
 Die einfachste Form, einen mathematischen Ausdruck auf einem Computer einzugeben, 
@@ -49,7 +75,6 @@ Dabei gelten folgende Beziehungen zwischen den Zeichen und ihrer mathematischen 
 \end{tabular}
 \end{table}
 
-\noindent
 Es ist mit nur diesen Zeichen möglich, eine Großzahl von mathematischen Termen darzustellen 
 und ist deswegen ein simpler, aber effektiver Weg, um Benutzereingaben entgegenzunehmen.
 
@@ -77,7 +102,6 @@ Folglich muss $4*5$ vor $3+4$ ausgerechnet werden.
 \label{def:operatorrangfolge}
 \end{defin}
 
-\noindent
 Für ein Programm existiert per se kein Unterschied zwischen dem Zeichen \textit{3} und \textit{+}. 
 Beide haben denselben Datentyp. Deswegen ist es erforderlich, immer das Zeichen zu untersuchen und 
 ihm seine jeweilige Bedeutung zuzuordnen. \newline
@@ -109,7 +133,6 @@ Zu diesen Ausdrücken zählen Summen, Produkte, Differenzen, Divisionen und Pote
 \label{def:zusammengesetzter_ausdruck}
 \end{defin}
 
-\noindent
 Man kann nun atomare und zusammengesetzte Ausdrücke und ihre Beziehungen zueinander in einem Baum darstellen.
 Dabei gelten folgende Regeln:
 
@@ -119,8 +142,6 @@ eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusamm
 \lab{def:atomarer_ausdruck} Ausdrücke sein können. Alle Blätter des Baumes sind atomare Ausdrücke. \lab{def:atomarer_ausdruck}
 \label{def:baum}
 \end{defin}
-
-\newpage
 
 \begin{figure}[h]
   \centering
@@ -136,7 +157,6 @@ eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusamm
    Wie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke \lab{def:atomarer_ausdruck}.
 \end{example}
 
-\noindent
 Von welchem Datentyp die Blätter und Knoten sind, ist ganz von der eigenen Implementierung abhängig.
 In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes sein:
 
@@ -146,18 +166,15 @@ In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes se
   \caption{UML Diagramm aller Ausdrücke}
 \end{figure}
 
-\noindent
 Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt. 
 Wie einem vielleicht auffällt, ist auch der Bruch ein Operator. 
 Das ist darin begründet, dass ein Bruch genau genommen auch eine Operation (Division) ist, 
 allerdings eine, die nicht zu einer ganzen Zahl vereinfacht werden kann. 
 Im Baum wird ein Bruch also wie folgt dargestellt:
 
-\newpage
-
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{trees/beispiel_baum_frac.png}
+  \includegraphics[scale=0.5]{trees/beispiel_baum_frac.png}
   \caption{Ein Bruch im Baum mathematischer Ausdrücke}
 \end{figure}
 
@@ -169,6 +186,7 @@ Folglich ist es erforderlich, die Zeichenkette nach Eingabe in einen Baum umzuwa
 Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
 
 \begin{defin}
+  \label{def:konventionelle_struktur}
   Die \textbf{konventionelle Struktur} eines Ausdrucks entspricht der Struktur vor der automatischen Vereinfachung. 
   Diese Struktur ist auch die, die in der Mathematik verwendet wird. Hier gilt:
 
@@ -178,13 +196,170 @@ Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
     \item die Operanden der Operatoren  sind Algebraische Ausdrücke
   \end{enumerate}
 
-  \noindent
   Jeder Ausdruck kann immer einem Klammerlevel zugeordnet werden. 
   Standardmäßig ist das Klammerlevel 0. Befindet sich ein Ausdruck in runden Klammern, 
   so erhöht sich sein Klammerlevel um 1. Der Ausdruck mit dem höheren Klammerlevel hat immer die höhere Priorität 
   gegenüber einem Ausdruck mit niedrigerem Klammerlevel.
   Es gelten folgende Regeln für die Operatorrangfolge \lab{def:operatorrangfolge} bei gleichem Klammerlevel:
+
+  \begin{center}
+    Höchste Priorität \\
+    \textrm{\textasciicircum} \\
+    \textrm{* /} \\
+    \textrm{+ -} \\
+    Niedrigste Priorität
+  \end{center}
+
+  Falls 2 Operatoren dieselbe Priorität haben (z. B. + und -) hat 
+  der rechte Operator die höhere Priorität.
+  Die einzige Ausnahme ist die Potenz, bei welcher der linke Operator
+  die höhere Priorität hat
+
 \end{defin}
+
+Um aus diesen Regeln einen Algorithmus zu bauen, ist es hilfreich, 
+eine Grammatik für einen mathematischen Ausdruck unter Beachtung der eben definierten Regeln 
+in Form einer Backus-Naur-Form zu definieren. 
+
+\begin{defin}
+  Eine \textbf{Backus-Naur-Form} (BNF) ist eine Notationsform, um die Grammatik von Sprachen zu definieren. 
+  Der Syntax einer Backus-Naur-Form ist sehr einfach zu verstehen, da es nur 3 Symbole gibt.  
+
+  \begin{table}[h]
+  \begin{tabular}{|l|l|}
+  \hline
+    Zeichen     & Bedeutung               \\ \hline
+    ::=         & Ist definiert als       \\ \hline
+    |           & Oder                    \\ \hline
+    <X>         & Name einer Kategorie X  \\ \hline
+  \end{tabular}
+  \end{table}
+\end{defin}
+
+\begin{minted}{bnf}
+<Addition>    ::=    <Ziffer> + <Ziffer>
+<Ziffer>      ::=    0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
+\end{minted}
+Diese Backus-Naur-Form kann gelesen werden als: 
+Eine Addition besteht aus 2 Ziffern, 
+welche durch ein Plus Symbol getrennt sind. 
+Eine Ziffer ist eine Zahl von 0 bis 9. 
+Wie einem vielleicht auffällt, erlaubt diese Definition nur 
+die Addition von 2 Ziffern. Der String $32+2$ würde also nicht 
+dieser Definition einer Addition entsprechen. \newline \\
+Um einen String nun in einen Baum auf Basis einer Backus-Naur-Form umzuwandeln, 
+lässt sich folgender Algorithmus formulieren
+
+\begin{defin}
+  Algorithmus zum Parsen eines BNF Baums
+  \begin{enumerate}
+    \item Überprüfe, ob der gegebene String der 1. Option der jeweiligen Definition entspricht.
+    \item Enthält die Definition eine weitere Definition, so überprüfe ob der String oder Teilstring auch dieser Definition entspricht.
+    \item Entspricht der String der Definition, so erweitere den Baum mit dem passenden Knoten / Blatt.
+    \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, so muss es sich um einen invaliden String handeln.
+  \end{enumerate}
+\end{defin}
+
+Wenden wir diesen Algorithmus an, 
+entsteht ein Baum für den gegebenen Term.
+Die vorher definierte Backus-Naur-Form würde 
+zum Beispiel für den Input $2+3$ folgenden Baum generieren.
+
+\newpage
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_bnf_1.png}
+  \caption{Parse Tree für den Input $2+3$}
+\end{figure}
+
+Ziel ist es nun, eine Backus-Naur-Form für einen mathematischen Ausdruck 
+zu definieren, welche alle Aspekte der Definition 
+eines mathematischen Ausdrucks in der konventionellen Struktur 
+\lab{def:konventionelle_struktur} berücksichtigt.
+
+\begin{minted}{bnf}
+<exp>       ::= <exp> + <exp> | <exp> * <exp> | <exp> - <exp> | 
+                <exp> / <exp> | <exp> ^ <exp> | <int> | <symbol>
+<int>       ::= <digit> <int> | <digit>
+<digit>     ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<symbol>    ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
+                o | p | q | s | t | u | v | w | x | y | z
+\end{minted}
+
+Diese Grammatik ist in der Lage, eine große Anzahl von Ausdrücken zu repräsentieren. 
+So zum Beispiel auch $6+3*4$. Bei genauerer Betrachtung fällt einem jedoch auf, 
+dass diese Grammatik die Operatorpräzedenz \lab{def:operatorrangfolge} 
+nicht berücksichtigt. 
+Es gibt für den Term $6+3*4$ zwei verschiedene Bäume, 
+die mit der Grammatik übereinstimmen. 
+Allerdings ist nur der 1. Baum korrekt. 
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_bnf_2_1.png}
+  \caption{1. Möglicher Baum für $6+3*4$}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_bnf_2_2.png}
+  \caption{2. Möglicher Baum für $6+3*4$}
+\end{minipage}
+\end{figure}
+
+Dieses Problem kann dadurch gelöst werden, dass man eine Multiplikation als 
+Operand einer Addition erlaubt, aber Addition nicht als Operand der Multiplikation 
+zulässt. Diese Änderung resultiert in folgendem BNF:
+
+\begin{minted}{bnf}
+<exp>     ::= <exp> + <exp> | <exp> - <exp> | 
+<term>    ::= <term> * <term> | <term> / <term> | <factor>
+<power>   ::= <power> ^ <power>
+<factor>  ::= <int> | <symbol 
+<int>     ::= <digit> <int> | <digit>
+<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
+              o | p | q | s | t | u | v | w | x | y | z
+\end{minted}
+
+Für den Term $6+3*4$ gibt es nur noch einen möglichen Baum,
+allerdings gibt es noch ein weiteres Problem. 
+Bei der Subtraktion von mehreren Zahlen, 
+zum Beispiel $4-5-2$ gibt es wieder zwei mögliche Bäume 
+mit zwei verschiedenen Ergebnissen. 
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_bnf_3_1.png}
+  \caption{1. Möglicher Baum für $4-5-2$}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.5]{trees/beispiel_bnf_3_2.png}
+  \caption{2. Möglicher Baum für $4-5-2$}
+\end{minipage}
+\end{figure}
+
+Das Problem entsteht dadurch, dass sowohl die linke als auch 
+die rechte Seite der Differenz weitere Differenzen enthalten können. 
+Das darf also nur noch auf der linken Seite erlaubt sein. 
+Die einzige Ausnahme ist die Potenz, da sie ein rechts assoziativer Operator ist. 
+Was außerdem noch fehlt, sind unäre Summen und Differenzen, 
+sowie die Möglichkeit, mit Klammern die Operatorrangfolge zu manipulieren. 
+Mit allen diesen Änderungen sieht die Backus-Naur-Form nun folgendermaßen aus:
+
+\begin{minted}{bnf}
+<exp>     ::= + <exp> | <exp> + <term> | - <exp> | <exp> - <term> | <term> 
+<term>    ::= <term> * <power> | <term> / <power> | <power>
+<power>   ::= <factor> ^ <power> | <factor>
+<factor>  ::= ( <exp> ) | <int> | <symbol> 
+<int>     ::= <digit> <int> | <digit>
+<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
+              o | p | q | s | t | u | v | w | x | y | z
+\end{minted}
 
 \end{document}
 
