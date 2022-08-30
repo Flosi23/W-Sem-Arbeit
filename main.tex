@@ -11,6 +11,8 @@
 
 % Allow for special characters such as < >
 \usepackage[T1]{fontenc}
+% Modify the figure caption font
+\usepackage[font=small,labelfont=bf]{caption}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -166,7 +168,15 @@ In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes se
   \caption{UML Diagramm aller Ausdrücke}
 \end{figure}
 
-Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt. 
+Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt.
+\begin{defin}
+  \textbf{Binäre Operatoren} sind Operatoren, welche immer zwei Operanden haben müssen
+\end{defin} 
+\begin{defin}
+  \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operandenanzahl aufgrund des
+  Assoziativgesetzes zwischen 1 und N variieren kann
+\end{defin}
+
 Wie einem vielleicht auffällt, ist auch der Bruch ein Operator. 
 Das ist darin begründet, dass ein Bruch genau genommen auch eine Operation (Division) ist, 
 allerdings eine, die nicht zu einer ganzen Zahl vereinfacht werden kann. 
@@ -265,8 +275,6 @@ entsteht ein Baum für den gegebenen Term.
 Die vorher definierte Backus-Naur-Form würde 
 zum Beispiel für den Input $2+3$ folgenden Baum generieren.
 
-\newpage
-
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_1.png}
@@ -360,6 +368,248 @@ Mit allen diesen Änderungen sieht die Backus-Naur-Form nun folgendermaßen aus:
 <symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
               o | p | q | s | t | u | v | w | x | y | z
 \end{minted}
+
+Der Algorithmus, der auf dieser Backus-Naur-Form basiert und zum Parsen eines Strings in einen
+Baum mathematischer Ausdrücke \lab{def:baum} dient kann im Source Code unter dem Pfad /server/cas/parse.ts 
+oder online über \url{https://github.com/Flosi23/cas/blob/main/server/cas/parse.ts} eingesehen werden. \newline
+Außerdem bietet sich die Möglichkeit das Verhalten des Algorithmus auf der website  \url{https://cas.dotenv.de}
+direkt selbst auszuprobieren. Dafür muss ein mathematischer Ausdruck welcher der konventionellen Struktur 
+entspricht \lab{def:konventionelle_struktur}
+(Dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
+in das Eingabefeld eingeben und der Knopf \glqq Calculate\grqq{}  gedrückt werden. 
+Der vom Algorithmus generierte Baum kann dann unter dem Reiter \grqq Expression Tree\grqq{} eingesehen werden.
+
+\section{Automatische Vereinfachung}
+
+Jedes Computeralgebrasystem wendet mathematische Regeln an, um einen Ausdruck zu vereinfachen. 
+Diesen Prozess nennt man automatische Vereinfachung. 
+Jeder Ausdruck wird automatisch vereinfacht, bevor andere Operationen angewendet werden. 
+Motivation hinter der automatischen Vereinfachung ist es, den Term in eine einheitliche und simplere Form zu bringen, 
+damit man ihn mit anderen Termen vergleichen und damit rechnen kann. 
+
+\begin{example}
+Nimmt man den Term $3+x+y$ so gibt es aufgrund des Kommutativgesetzes 6 verschiedene Möglichkeiten diesen
+niederzuschreiben ohne, dass sich sein Ergebnis verändert
+\begin{enumerate}
+  \item $3+x+y$
+  \item $3+y+x$
+  \item $y+3+x$
+  \item $y+x+3$
+  \item $x+y+3$
+  \item $x+3+y$
+\end{enumerate}
+\end{example}
+
+Obwohl alle 6 Terme equivalent sind, sind sie syntaktisch nicht gleich und würden aufgrund dessen von einem Computeralgebrasystem
+vor der automatischen Vereinfachung nicht als gleich angesehen werden. Ohne eine Vereinheitlichung könnten die Terme also nicht 
+verglichen werden.
+Wieso das problematisch ist, lässt sich an einem einfachen Beispiel zeigen.
+
+\begin{example}
+  Nehme man den Term $6xy+8yx$. Für einem Menschen ist klar ersichtlich, dass man diesen zu $14xy$ vereinfachen kann.
+  Ein Computeralgebrasystem könnte diese Vereinfachung aber nicht vornhemen, da es die Terme $xy$ und $yx$ nicht als gleich
+  ansehen und folglich nicht addieren würde.
+\end{example}
+
+Neben der Sortierung ist ein weiterer wichtiger Schritt Operatoren wie Division und Differenz durch andere Operatoren
+zu ersetzen, um die Anzahl möglicher Operatoren zu reduzieren und den Baum mathematischer Ausdrücke so zu simplifizieren. \newline
+Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie möglich und mathematische Gesetze 
+(wie etwa das Distributivgesetz) angwendet werden um den Term zu vereinfachen.
+
+\begin{defin}
+  Ein Term gilt als \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
+  \begin{enumerate}
+    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Kommutativgesetzes ist es möglich, 
+          dass + n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
+          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen)
+    \item $*$ ist ein Operator mit mindestens zwei Operanden (Kommutativgesetz), von denen keiner ein Produkt sein darf. 
+          Außerdem darf nur maximal ein Operand eine Zahl oder ein Bruch sein. 
+    \item Der Operator $-$ darf nicht vorkommen, da er immer als Produkt mit -1 dargestellt werden kann.
+    \item Auch der Operator $/$ darf nicht vorkommen, da man einen Quotienten immer als Produkt oder numerischen Bruch darstellen kann.
+    \item Ein Quotient, der einen Bruch bei dem sowohl Zähler, und Nenner nicht Null und natürliche Zahlen sind aufweist, 
+          muss als Bruch dargestellt werden. Außerdem muss der Nenner größer als eins und der größte gemeinsame Teiler eins sein.
+    \item Bei einer Potenz $v^n$ muss $n$ eine natürliche Zahl sein. Außerdem darf $v$ keine eine Zahl, Bruch, Potenz oder ein Produkt sein
+  \end{enumerate}
+\end{defin}
+
+\subsection{Transformationen}
+
+Folgende Transformationen stellen die Grundlage eines jeden Algorithmus der automatischen Vereinfachung dar und können,
+wenn richtig angewandt einen Term vollständig vereinfachen
+
+\subsubsection{Distributive Transformation}
+
+\begin{defin}
+  \label{def:distributive_transformation}
+  Bei der \textbf{distributiven Transformation} werden gleiche Terme mit konstanten Koeffizienten
+  in einer Summe basierend auf dem Distributivgesetz vereinfacht, 
+  indem ihre Koeffizienten miteinander addiert werden. 
+\end{defin}
+
+\begin{example}
+  $2x + y + \frac{3}{2}x = \frac{7}{2}x + y$
+\end{example}
+
+\subsubsection{Assoziative Transformation}
+
+\begin{defin}
+  \label{def:assoziative_transformation}
+  Existiert ein Term $U$, der eine Summe bzw. ein Produkt ist, und einer der Operanten $S$ ist auch eine Summe 
+  bzw. ein Produkt, so werden die Operatoren von $S$ zu $U$ addiert. 
+  Diese Transformation wird immer vor der Distributiven Transformation ausgeführt.
+\end{defin}
+
+\begin{example}
+  $2*(x*y) = 2*x*y$
+\end{example}
+
+\subsubsection{Kommutative Transformation}
+
+\begin{defin}
+  \label{def:kommutative_transformation}
+  Die \textbf{kommutative Transformation}, 
+  basierend auf dem Kommutativgesetz, dient der Sortierung von Termen in Summen und Produkten, 
+  um eine einheitliche Form zu erreichen.
+\end{defin}
+
+\begin{example}
+  $x+y+2 = 2+x+y$
+\end{example}
+
+\subsubsection{Potenz-Transformationen}
+
+\begin{defin}
+  \label{def:potenz_transformation}
+  Die \textbf{Potenz-Transforamtionen} basieren auf den 3 Potenzgesetzen:
+  \begin{enumerate}
+    \item P1 $a^m * a^n = a^{m+n}$
+    \item P2 $(a*b)^n   = a^n * b^n$
+    \item P3 $(a^m)^n   = a^{m*n}$
+  \end{enumerate}
+\end{defin}
+
+\subsubsection{Quotienten-Transformation}
+
+\begin{defin}
+  \label{def:quotienten-transformation}
+  Quotienten werden komplett entfernt und stattdessen durch ein Produkt ersetzt. 
+  Ein Faktor des Produkts (der Nenner des Quotienten) ist eine Potenz mit der Basis des Nenners und dem Exponenten $-1$
+\end{defin}
+
+\begin{example}
+  $u/v = u * v^{-1}$
+\end{example}
+
+\subsubsection{Differenzen-Transformation}
+\begin{defin}
+\label{def:differenzen_transformation}
+Jede unäre Differenz wird durch eine Multiplikation mit -1 ersetzt. 
+Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt
+\end{defin}
+
+\begin{example}
+  $-v = -1 * v$
+\end{example}
+  
+\begin{example}
+  $u - v = u + (-1) * v $
+\end{example}
+
+\subsubsection{Identitäten-Transformationen}
+
+\begin{defin}
+  \label{def:identitaeten_transformation}
+  Die Identitäten-Transformation definiert folgende Regeln welchen im Umgang mit Termen, die
+  Einsen oder Nullen enthalten angewandt werden können
+  \begin{enumerate}
+    \item $u+0 = u$
+    \item $u*0 = 0$
+    \item $u*1 = u$
+    \item $
+            0^w = \left\{
+                \begin{array}{ll}
+                    0         & w \in \mathbf{Q} \textrm{ and } w > 0 \\
+                    undefined & 
+                \end{array}
+            \right.$
+    \item $1^w = 1$
+    \item $
+          v^0 = \left\{
+              \begin{array}{ll}
+                  1         & v \neq 0 \\
+                  undefined & v = 0 
+              \end{array}
+          \right.
+          $
+    \item $v^1 = v$
+  \end{enumerate}
+\end{defin}
+
+\subsubsection{Numerische Transformationen}
+\begin{defin}
+  \label{def:numerische_transformation}
+  Die numerischen Transformationen definieren, wie rationale Zahlen in Termen vereinfacht werden sollen.
+
+  \begin{enumerate}
+    \item Konstanten in einem Produkt werden miteinander multipliziert. $3*2*x = 6*x$
+    \item Konstanten in einer Summe werden miteinander addiert. $3+3+x = 6+x$
+    \item Potenzen, deren Basis sowie Exponent Konstanten sind, werden berechnet. $3^2 = 9$
+    \item Brücke werden so weit wie möglich gekürzt. $\frac{12}{8} = \frac{3}{4}$
+  \end{enumerate}
+\end{defin}
+
+
+\subsection{Algorithmen}
+
+Basierend auf diesen Transformationen lassen sich nun Algorithmen für die Vereinfachung von
+Differenzen, Divisionen, Potenzen, Additionen, Summen und Produkten formulieren.
+
+\subsubsection{Vereinfachung einer Differenz}
+Bei der Vereinfachung einer Differenz wird nur die Differenzen-Transforamtion \lab{def:differenzen_transformation}
+angewandt.
+
+\subsubsection{Vereinfachung einer Division}
+Sind Zähler und Nenner rationale Zahlen, wird die Division zu einem Bruch umgeschrieben.
+Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} angewandt.
+
+\subsubsection{Vereinfachung einer Potenz}
+\begin{enumerate}
+  \item Ist die Basis 0, wird die Identitäten-Transformation 4 \lab{def:identitaeten_transformation} angewandt.
+  \item Ist der Exponent eine ganze Zahl:
+        \begin{enumerate}
+          \item Ist der Exponent 0 oder 1, wird die Identitäten-Transformation 6 oder 7 
+                \lab{def:identitaeten_transformation} angewandt.
+          \item Ist die Basis eine rationale Nummer, so wird die numerische Transformation 3 
+                \lab{def:numerische_transformation} und auf deren Ergebnis die numerische 
+                Transformation 4 \lab{def:numerische_transformation} angewandt.
+          \item Ist die Basis eine Potenz, wird die Potenztransformation 2 \lab{def:potenz_transformation} angewandt.
+          \item Ist die Basis ein Produkt, wird die Potenztransformation 3 \lab{def:potenz_transformation} angewandt.
+        \end{enumerate}
+  \item Trifft keiner der oberen Fälle zu, wird nichts vereinfacht.
+\end{enumerate}
+
+\subsubsection{Vereinfachung eines Produkts}
+Ein Produkt wird vereinfacht, indem die folgenden 
+Transformationen in genau dieser Reihenfolge angwendetwerden.
+\begin{enumerate}
+  \item Assoziative Transformation \lab{def:assoziative_transformation}.
+  \item Numerische Transformation 1 und 4 \lab{def:numerische_transformation}.
+  \item Gleiche Terme werden miteinander multipliziert: Anwendung der Potenz-Transformation 1 
+        \lab{def:potenz_transformation}, wenn beide Terme Potenzen mit gleicher Basis sind
+  \item Identitäten-Transformation 2 und 3 \lab{def:identitaeten_transformation}.
+  \item Kommutative-Transformation \lab{def:kommutative_transformation}
+\end{enumerate}
+
+\subsubsection{Vereinfachung einer Summe}
+Eine Summe wird vereinfacht, indem die folgenden 
+Transformationen in genau dieser Reihenfolge angwendetwerden.
+\begin{enumerate}
+  \item Assoziative Transformation \lab{def:assoziative_transformation}.
+  \item Numerische Transformation 2 und 4 \lab{def:numerische_transformation}.
+  \item Distributive Transformation \lab{def:distributive_transformation}
+  \item Identitäten-Transformation 1 und 3 \lab{def:identitaeten_transformation}.
+  \item Kommutative-Transformation \lab{def:kommutative_transformation}
+\end{enumerate}
 
 \end{document}
 
