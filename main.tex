@@ -377,7 +377,7 @@ direkt selbst auszuprobieren. Dafür muss ein mathematischer Ausdruck welcher de
 entspricht \lab{def:konventionelle_struktur}
 (Dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
 in das Eingabefeld eingeben und der Knopf \glqq Calculate\grqq{}  gedrückt werden. 
-Der vom Algorithmus generierte Baum kann dann unter dem Reiter \grqq Expression Tree\grqq{} eingesehen werden.
+Der vom Algorithmus generierte Baum kann dann unter dem Reiter \glqq Expression Tree\grqq{} eingesehen werden.
 
 \section{Automatische Vereinfachung}
 
@@ -568,9 +568,48 @@ Differenzen, Divisionen, Potenzen, Additionen, Summen und Produkten formulieren.
 Bei der Vereinfachung einer Differenz wird nur die Differenzen-Transforamtion \lab{def:differenzen_transformation}
 angewandt.
 
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/difference/beispiel_1_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/difference/beispiel_1_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.4]{trees/difference/beispiel_1_3.png}
+    \caption{Schritt 3}
+  \end{figure}
+  In diesem Beispiel wird die Vereinfachung des Terms $2-3$ betrachtet. Dieser wird zuerst in eine Summe
+  umgeschrieben und dann duch den Algorithmus zur Vereinfachung einer Summe zu $-1$ vereinfacht.
+\end{example}
+
 \subsubsection{Vereinfachung einer Division}
 Sind Zähler und Nenner rationale Zahlen, wird die Division zu einem Bruch umgeschrieben.
 Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} angewandt.
+
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/division/beispiel_1_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/division/beispiel_1_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  Der Term $\frac{2}{x}$ wird in ein Produkt umgeschrieben und dann so weit es geht vereinfacht. In diesem Fall
+  ist der Term allerdings schon vollständig vereinfacht.
+\end{example}
 
 \subsubsection{Vereinfachung einer Potenz}
 \begin{enumerate}
@@ -588,6 +627,57 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
   \item Trifft keiner der oberen Fälle zu, wird nichts vereinfacht.
 \end{enumerate}
 
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_1_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_1_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  Da der Exponent im Term $\frac{2}{3}^2$ eine ganze Zahl ist, wird hier die numerische Transformation 3 angewandt. 
+  Der resultierende Bruch wird nicht weiter durch die numerische Transformation 4 vereinfacht,
+  da er schon vollständig vereinfacht ist.
+\end{example}
+
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_2_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_2_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  Der Term ${x^2}^2$ wird mithilfe der Potenz-Transformation 3 vereinfacht. 
+\end{example}
+
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_3_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{trees/power/beispiel_3_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  Ist die Basis einer Potenz ein Produkt, so wie bei dem Term ${{(a*b)}^2}$, so wird die 2.
+  Potenz-Transformation angewendet.
+\end{example}
+
 \subsubsection{Vereinfachung eines Produkts}
 Ein Produkt wird vereinfacht, indem die folgenden 
 Transformationen in genau dieser Reihenfolge angwendetwerden.
@@ -599,6 +689,33 @@ Transformationen in genau dieser Reihenfolge angwendetwerden.
   \item Identitäten-Transformation 2 und 3 \lab{def:identitaeten_transformation}.
   \item Kommutative-Transformation \lab{def:kommutative_transformation}
 \end{enumerate}
+
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/product/beispiel_1_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/product/beispiel_1_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  \centering
+  \begin{figure}
+    \centering
+    \includegraphics*[scale=0.5]{trees/product/beispiel_1_3.png}
+  \end{figure}
+  \newline
+  In diesem Beispiel wird der Term $(2*x)*(3*x^2)$ betrachtet. Zuerst wird die assoziative Transformation angewandt und
+  die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die numerische 
+  Transformation 1 sowie die Potenz-Transformation 1 angewendet, da die Terme $x$ und $x^2$ dieselbe Basis $x$ haben.
+  Es wird keine Identitäten-Transformation angewandt, da weder $0$ noch $1$ Operanden des Produkts sind.
+  Auch die kommutative Transformation verändert nichts an der Struktur des Termes, da alle Operanden schon in der richtigen
+  Reihenfolge sind.
+\end{example}
 
 \subsubsection{Vereinfachung einer Summe}
 Eine Summe wird vereinfacht, indem die folgenden 

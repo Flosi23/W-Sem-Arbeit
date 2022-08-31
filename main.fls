@@ -1,1026 +1,1100 @@
-PWD e:\Simon\Documents\W-Seminar
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Simon\Documents\W-Seminar\main.tex
+PWD /Users/simon/Documents/W-Sem-Arbeit
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT /Users/simon/Documents/W-Sem-Arbeit/main.tex
 OUTPUT main.log
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\article.cls
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\size11.clo
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\size11.clo
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\size11.clo
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\size11.clo
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\inputenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\babel.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\babel-german\german.ldf
-INPUT E:\Simon\Software\MiKTeX\tex\latex\babel-german\german.ldf
-INPUT E:\Simon\Software\MiKTeX\tex\latex\babel-german\german.ldf
-INPUT E:\Simon\Software\MiKTeX\tex\latex\babel-german\german.ldf
-INPUT E:\Simon\Software\MiKTeX\tex\latex\babel-german\germanb.ldf
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
-INPUT E:\Simon\Software\MiKTeX\tex\generic\babel\locale\de\babel-de-1901.ini
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\helvet.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\fontenc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\t1phv.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\t1phv.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\t1phv.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\psnfss\t1phv.fd
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\caption\caption3.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\trig.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hycolor\hycolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\auxhook\auxhook.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\pd1enc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\pd1enc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\pd1enc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\pd1enc.def
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\puenc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\puenc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\puenc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\puenc.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\url\url.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bitset\bitset.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\atbegshi\atbegshi.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atbegshi-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hpdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hpdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hpdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\hyperref\hpdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\atveryend-ltx.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\atveryend\atveryend.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\minted\minted.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fvextra\fvextra.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\upquote\upquote.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\ifthen.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\calc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\ifplatform\ifplatform.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\tools\shellesc.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\ifluatex.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT .\nul:.tex
-INPUT .\nul:.tex
-INPUT .\nul:.tex
-INPUT nul:.tex
-INPUT E:\Simon\Software\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xstring\xstring.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\xstring\xstring.tex
-INPUT E:\Simon\Software\MiKTeX\tex\latex\lineno\lineno.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\framed\framed.sty
-INPUT E:\Simon\Software\MiKTeX\tex\generic\catchfile\catchfile.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\float\float.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\textcomp.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\xcolor\xcolor.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex-dev\graphics\mathcolor.ltx
-INPUT E:\Simon\Software\MiKTeX\tex\latex-dev\graphics\mathcolor.ltx
-INPUT E:\Simon\Software\MiKTeX\tex\latex-dev\graphics\mathcolor.ltx
-INPUT E:\Simon\Software\MiKTeX\tex\latex-dev\graphics\mathcolor.ltx
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/txtbabel.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-german/german.ldf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-german/german.ldf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-german/german.ldf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-german/german.ldf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-german/germanb.ldf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/de/babel-german.tex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/de/babel-german.tex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/de/babel-german.tex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/de/babel-german.tex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/de/babel-de.ini
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhook/auxhook.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/minted/minted.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fvextra/fvextra.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/upquote/upquote.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/shellesc.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifluatex.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /dev/null
+INPUT /dev/null
+INPUT /dev/null
+INPUT ./main.w18
+INPUT main.w18
+INPUT main.w18
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/xstring/xstring.tex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lineno/lineno.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/framed/framed.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/generic/catchfile/catchfile.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx
+INPUT ./main.aex
 INPUT main.aex
-INPUT .\main.aex
+INPUT ./main.aex
 INPUT main.aex
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT E:\Simon\Software\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\main.aux
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./main.aux
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
-INPUT E:\Simon\Software\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT E:\Simon\Software\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT E:\Simon\Software\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT E:\Simon\Software\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT E:\Simon\Software\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT E:\Simon\Software\MiKTeX\tex\latex\graphics\color.sty
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-INPUT .\main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT .\main.out
-INPUT .\main.out
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
 OUTPUT main.out
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+OUTPUT main.pdf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 OUTPUT main.toc
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvbo8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8r.tfm
-INPUT .\images\\trees\beispiel_1_baum.png
-INPUT images\\trees\beispiel_1_baum.png
-INPUT .\images\\trees\beispiel_1_baum.png
-INPUT .\images\\trees\beispiel_1_baum.png
-INPUT .\images\\trees\beispiel_1_baum.png
-INPUT .\images\\trees\beispiel_1_baum.png
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT .\images\\UML_Ausdruecke.png
-INPUT images\\UML_Ausdruecke.png
-INPUT .\images\\UML_Ausdruecke.png
-INPUT .\images\\UML_Ausdruecke.png
-INPUT .\images\\UML_Ausdruecke.png
-INPUT .\images\\UML_Ausdruecke.png
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT .\images\\trees\beispiel_baum_frac.png
-INPUT images\\trees\beispiel_baum_frac.png
-INPUT .\images\\trees\beispiel_baum_frac.png
-INPUT .\images\\trees\beispiel_baum_frac.png
-INPUT .\images\\trees\beispiel_baum_frac.png
-INPUT .\images\\trees\beispiel_baum_frac.png
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\jknappen\ec\ecti1095.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT ./images//trees/beispiel_1_baum.png
+INPUT images//trees/beispiel_1_baum.png
+INPUT ./images//trees/beispiel_1_baum.png
+INPUT ./images//trees/beispiel_1_baum.png
+INPUT ./images//trees/beispiel_1_baum.png
+INPUT ./images//trees/beispiel_1_baum.png
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvbo8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8r.tfm
+INPUT ./images//UML_Ausdruecke.png
+INPUT images//UML_Ausdruecke.png
+INPUT ./images//UML_Ausdruecke.png
+INPUT ./images//UML_Ausdruecke.png
+INPUT ./images//UML_Ausdruecke.png
+INPUT ./images//UML_Ausdruecke.png
+INPUT ./images//trees/beispiel_baum_frac.png
+INPUT images//trees/beispiel_baum_frac.png
+INPUT ./images//trees/beispiel_baum_frac.png
+INPUT ./images//trees/beispiel_baum_frac.png
+INPUT ./images//trees/beispiel_baum_frac.png
+INPUT ./images//trees/beispiel_baum_frac.png
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecti1095.tfm
 OUTPUT main.pyg
-INPUT .\_minted-main\default.pygstyle
-INPUT _minted-main\default.pygstyle
-INPUT .\_minted-main\default.pygstyle
-INPUT _minted-main\default.pygstyle
-INPUT _minted-main\default.pygstyle
-INPUT .\main.pyg
-INPUT .\_minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT E:\Simon\Software\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
-INPUT .\images\\trees\beispiel_bnf_1.png
-INPUT images\\trees\beispiel_bnf_1.png
-INPUT .\images\\trees\beispiel_bnf_1.png
-INPUT .\images\\trees\beispiel_bnf_1.png
-INPUT .\images\\trees\beispiel_bnf_1.png
-INPUT .\images\\trees\beispiel_bnf_1.png
+INPUT ./_minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT ./_minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT ./main.pyg
+INPUT ./_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/t1cmtt.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/t1cmtt.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/t1cmtt.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/t1cmtt.fd
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT ./images//trees/beispiel_bnf_1.png
+INPUT images//trees/beispiel_bnf_1.png
+INPUT ./images//trees/beispiel_bnf_1.png
+INPUT ./images//trees/beispiel_bnf_1.png
+INPUT ./images//trees/beispiel_bnf_1.png
+INPUT ./images//trees/beispiel_bnf_1.png
 OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\images\\trees\beispiel_bnf_2_1.png
-INPUT images\\trees\beispiel_bnf_2_1.png
-INPUT .\images\\trees\beispiel_bnf_2_1.png
-INPUT .\images\\trees\beispiel_bnf_2_1.png
-INPUT .\images\\trees\beispiel_bnf_2_1.png
-INPUT .\images\\trees\beispiel_bnf_2_1.png
-INPUT .\images\\trees\beispiel_bnf_2_2.png
-INPUT images\\trees\beispiel_bnf_2_2.png
-INPUT .\images\\trees\beispiel_bnf_2_2.png
-INPUT .\images\\trees\beispiel_bnf_2_2.png
-INPUT .\images\\trees\beispiel_bnf_2_2.png
-INPUT .\images\\trees\beispiel_bnf_2_2.png
+INPUT ./main.pyg
+INPUT ./_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./images//trees/beispiel_bnf_2_1.png
+INPUT images//trees/beispiel_bnf_2_1.png
+INPUT ./images//trees/beispiel_bnf_2_1.png
+INPUT ./images//trees/beispiel_bnf_2_1.png
+INPUT ./images//trees/beispiel_bnf_2_1.png
+INPUT ./images//trees/beispiel_bnf_2_1.png
+INPUT ./images//trees/beispiel_bnf_2_2.png
+INPUT images//trees/beispiel_bnf_2_2.png
+INPUT ./images//trees/beispiel_bnf_2_2.png
+INPUT ./images//trees/beispiel_bnf_2_2.png
+INPUT ./images//trees/beispiel_bnf_2_2.png
+INPUT ./images//trees/beispiel_bnf_2_2.png
 OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\images\\trees\beispiel_bnf_3_1.png
-INPUT images\\trees\beispiel_bnf_3_1.png
-INPUT .\images\\trees\beispiel_bnf_3_1.png
-INPUT .\images\\trees\beispiel_bnf_3_1.png
-INPUT .\images\\trees\beispiel_bnf_3_1.png
-INPUT .\images\\trees\beispiel_bnf_3_1.png
-INPUT .\images\\trees\beispiel_bnf_3_2.png
-INPUT images\\trees\beispiel_bnf_3_2.png
-INPUT .\images\\trees\beispiel_bnf_3_2.png
-INPUT .\images\\trees\beispiel_bnf_3_2.png
-INPUT .\images\\trees\beispiel_bnf_3_2.png
-INPUT .\images\\trees\beispiel_bnf_3_2.png
+INPUT ./main.pyg
+INPUT ./_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./images//trees/beispiel_bnf_3_1.png
+INPUT images//trees/beispiel_bnf_3_1.png
+INPUT ./images//trees/beispiel_bnf_3_1.png
+INPUT ./images//trees/beispiel_bnf_3_1.png
+INPUT ./images//trees/beispiel_bnf_3_1.png
+INPUT ./images//trees/beispiel_bnf_3_1.png
+INPUT ./images//trees/beispiel_bnf_3_2.png
+INPUT images//trees/beispiel_bnf_3_2.png
+INPUT ./images//trees/beispiel_bnf_3_2.png
+INPUT ./images//trees/beispiel_bnf_3_2.png
+INPUT ./images//trees/beispiel_bnf_3_2.png
+INPUT ./images//trees/beispiel_bnf_3_2.png
 OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT .\_minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT _minted-main\7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\jknappen\ec\ecti0800.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
-INPUT E:\Simon\Software\MiKTeX\fonts\tfm\jknappen\ec\ecti0600.tfm
+INPUT ./main.pyg
+INPUT ./_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT ./_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT _minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecti0800.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecti0600.tfm
+INPUT ./images//trees/difference/beispiel_1_1.png
+INPUT images//trees/difference/beispiel_1_1.png
+INPUT ./images//trees/difference/beispiel_1_1.png
+INPUT ./images//trees/difference/beispiel_1_1.png
+INPUT ./images//trees/difference/beispiel_1_1.png
+INPUT ./images//trees/difference/beispiel_1_1.png
+INPUT ./images//trees/difference/beispiel_1_2.png
+INPUT images//trees/difference/beispiel_1_2.png
+INPUT ./images//trees/difference/beispiel_1_2.png
+INPUT ./images//trees/difference/beispiel_1_2.png
+INPUT ./images//trees/difference/beispiel_1_2.png
+INPUT ./images//trees/difference/beispiel_1_2.png
+INPUT ./images//trees/difference/beispiel_1_3.png
+INPUT images//trees/difference/beispiel_1_3.png
+INPUT ./images//trees/difference/beispiel_1_3.png
+INPUT ./images//trees/difference/beispiel_1_3.png
+INPUT ./images//trees/difference/beispiel_1_3.png
+INPUT ./images//trees/difference/beispiel_1_3.png
+INPUT ./images//trees/division/beispiel_1_1.png
+INPUT images//trees/division/beispiel_1_1.png
+INPUT ./images//trees/division/beispiel_1_1.png
+INPUT ./images//trees/division/beispiel_1_1.png
+INPUT ./images//trees/division/beispiel_1_1.png
+INPUT ./images//trees/division/beispiel_1_1.png
+INPUT ./images//trees/division/beispiel_1_2.png
+INPUT images//trees/division/beispiel_1_2.png
+INPUT ./images//trees/division/beispiel_1_2.png
+INPUT ./images//trees/division/beispiel_1_2.png
+INPUT ./images//trees/division/beispiel_1_2.png
+INPUT ./images//trees/division/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_1_1.png
+INPUT images//trees/power/beispiel_1_1.png
+INPUT ./images//trees/power/beispiel_1_1.png
+INPUT ./images//trees/power/beispiel_1_1.png
+INPUT ./images//trees/power/beispiel_1_1.png
+INPUT ./images//trees/power/beispiel_1_1.png
+INPUT ./images//trees/power/beispiel_1_2.png
+INPUT images//trees/power/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_1_2.png
+INPUT ./images//trees/power/beispiel_2_1.png
+INPUT images//trees/power/beispiel_2_1.png
+INPUT ./images//trees/power/beispiel_2_1.png
+INPUT ./images//trees/power/beispiel_2_1.png
+INPUT ./images//trees/power/beispiel_2_1.png
+INPUT ./images//trees/power/beispiel_2_1.png
+INPUT ./images//trees/power/beispiel_2_2.png
+INPUT images//trees/power/beispiel_2_2.png
+INPUT ./images//trees/power/beispiel_2_2.png
+INPUT ./images//trees/power/beispiel_2_2.png
+INPUT ./images//trees/power/beispiel_2_2.png
+INPUT ./images//trees/power/beispiel_2_2.png
+INPUT ./images//trees/power/beispiel_3_1.png
+INPUT images//trees/power/beispiel_3_1.png
+INPUT ./images//trees/power/beispiel_3_1.png
+INPUT ./images//trees/power/beispiel_3_1.png
+INPUT ./images//trees/power/beispiel_3_1.png
+INPUT ./images//trees/power/beispiel_3_1.png
+INPUT ./images//trees/power/beispiel_3_2.png
+INPUT images//trees/power/beispiel_3_2.png
+INPUT ./images//trees/power/beispiel_3_2.png
+INPUT ./images//trees/power/beispiel_3_2.png
+INPUT ./images//trees/power/beispiel_3_2.png
+INPUT ./images//trees/power/beispiel_3_2.png
+INPUT ./images//trees/product/beispiel_1_1.png
+INPUT images//trees/product/beispiel_1_1.png
+INPUT ./images//trees/product/beispiel_1_1.png
+INPUT ./images//trees/product/beispiel_1_1.png
+INPUT ./images//trees/product/beispiel_1_1.png
+INPUT ./images//trees/product/beispiel_1_1.png
+INPUT ./images//trees/product/beispiel_1_2.png
+INPUT images//trees/product/beispiel_1_2.png
+INPUT ./images//trees/product/beispiel_1_2.png
+INPUT ./images//trees/product/beispiel_1_2.png
+INPUT ./images//trees/product/beispiel_1_2.png
+INPUT ./images//trees/product/beispiel_1_2.png
+INPUT ./images//trees/product/beispiel_1_3.png
+INPUT images//trees/product/beispiel_1_3.png
+INPUT ./images//trees/product/beispiel_1_3.png
+INPUT ./images//trees/product/beispiel_1_3.png
+INPUT ./images//trees/product/beispiel_1_3.png
+INPUT ./images//trees/product/beispiel_1_3.png
 INPUT main.aux
-INPUT .\main.out
-INPUT .\main.out
-INPUT .\main.pyg
+INPUT ./main.out
+INPUT ./main.out
+INPUT ./main.pyg
 INPUT main.pyg
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
-INPUT C:\Users\Simon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
-INPUT E:\Simon\Software\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvbo8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvbo8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
-INPUT E:\Simon\Software\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1095.pk
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1095.pk
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb
