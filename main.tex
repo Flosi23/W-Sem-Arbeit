@@ -59,6 +59,47 @@
 \maketitle
 \tableofcontents
 
+\section{Einleitung}
+
+Seit Anbeginn der Mathematik existiert  die Nachfrage nach Rechenhilfsmitteln.
+Was 300 vor Christus noch der Abakus war, sind heute Computeralgebrasysteme.
+Diese Systeme sind für Studenten, Forschung und Industrie ein unerlässliches Werkzeug
+und bilden ein eigenes Marktsegment.\\
+
+\begin{defin}
+\label{def:cas}
+Ein Computeralgebrasystem ist ein Programm, welches Methoden zum Lösen mathematisch
+formulierter Probleme durch symbolische Algorithmen bietet. Es beruht auf der exakten
+endlichen Darstellung mathematischer Objekte und Strukturen.
+Das Rechnen mit beliebig langen Zahlen, Symbolen, Unbestimmten und Polynomen, 
+das Faktorisieren von Zahlen und Polynomen, das Differenzieren von Polynomen und 
+anderen Funktionen und das exakte Lösen von Differenzialgleichungen 
+sind einige konkrete Beispiele für Problemstellungen, die die meisten Computeralgebrasysteme
+lösen können.
+
+Damit ein Computeralgebrasystem nützlich ist, sollte es folgende Eigenschaften haben:
+\begin{enumerate}
+  \item Eine Benutzeroberfläche, über die der Benutzer mathematische Ausdrücke eingeben kann.
+  \item Einen Vereinfachungsalgorithmus welcher mathematiche Ausdrücke vereinfachen kann.
+  \item Eine große Menge an mathematischen Algorithmen und Funktionen. Dazu gehören zum Beispiel
+        Algorithmen zur Bestimmung der Ableitung eines Terms.
+  \item Eine eigene Programmierumgebung, insbesondere eine eigene Programmiersprache.
+\end{enumerate}
+
+\end{defin}
+
+In dieser Arbeit soll nachvollzogen werden, wie Computeralgebrasysteme mit den Texteingaben von Benutzern 
+umgehen und diese intern darstellen. Außerdem soll die Funktionsweise eines Computeralgebrasystem 
+anhand des Algorithmus der automatischen Vereinfachung dargestellt werden.
+Um dies zu erreichen, wurde ein eigenes, simples Computeralgebrasystem implementiert,
+welches die Texteingabe des Benutzers einlesen, auswerten und vereinfachen kann. 
+Zudem wird es zur Visualisierung von Beispielen verwendet und dient als Möglichkeit, 
+selbst Eingaben auszuprobieren. 
+
+Im Zusammenhang dieser Arbeit wurde die Website \url{https://cas.dotenv.de} erstellt.
+In der Website wurden die Algorithmen, welcher in dieser Arbeit vorgestellt werden implementiert
+und können visuell nachvollzogen werden.
+
 \section{Benutzereingaben}
 Die einfachste Form, einen mathematischen Ausdruck auf einem Computer einzugeben, 
 ist unter der Verwendung der Symbole, welche einem auf der Tastatur schon zur Verfügung stehen. 
@@ -86,13 +127,13 @@ und ist deswegen ein simpler, aber effektiver Weg, um Benutzereingaben entgegenz
 Der Benutzer kann einen mathematischen Ausdruck also in Form eines Strings eingeben. 
 Den String auch als Datenstruktur zur Darstellung des Ausdrucks im Programm zu 
 verwenden hat allerdings Nachteile. 
-Um zu beurteilen, ob eine Darstellung für einen Computer passend ist oder nicht, 
+Um zu beurteilen, ob eine Darstellung als String für einen Computer passend ist oder nicht, 
 muss zuerst definiert werden, welche Informationen das Programm benötigt,
 um mit dem Term arbeiten zu können.
 
 \begin{defin}
   Um mit einem mathematischen Term arbeiten zu können muss ein Programm die Bedeutung
-  der einzelnen Zeichen sowie die Operatorrangfolge \lab{def:operatorrangfolge} kennen
+  der einzelnen Zeichen sowie die Operatorrangfolge \lab{def:operatorrangfolge} kennen.
 \label{def:programm_infos}
 \end{defin}
 
@@ -104,17 +145,10 @@ Folglich muss $4*5$ vor $3+4$ ausgerechnet werden.
 \label{def:operatorrangfolge}
 \end{defin}
 
-Für ein Programm existiert per se kein Unterschied zwischen dem Zeichen \textit{3} und \textit{+}. 
-Beide haben denselben Datentyp. Deswegen ist es erforderlich, immer das Zeichen zu untersuchen und 
-ihm seine jeweilige Bedeutung zuzuordnen. \newline
-Um die Operatorpräzedenz zu bestimmen, muss es über den String iterieren und ihn in Teile unterschiedlicher Priorität unterteilen.
-Sind diese beiden Schritte getan, kann das Programm Operationen auf dem Term ausführen. \newline
-Am Ende wird das Resultat der Operation wieder in einen String geschrieben, da dies ja der gewählte Datentyp ist. 
-Das hat den Nachteil, dass alle gewonnen Informationen über die Bedeutung der Zeichen und die Priorität der Operatoren 
-wieder verloren gehen. Will man eine weitere Operation auf dem Term durchführen, 
-so muss man all diese Informationen noch einmal extrahieren. 
-Das ist ineffizient und führt zu mehr Komplexität im Code. \newline
-Der String ist folglich keine passende Datenstruktur um einen Ausdruck abzuspeichern
+Ein String bietet sich folglich nicht als Datenstruktur für einen mathematischen Ausdruck 
+an, da weder die Operatorpräzedenz noch die Bedeutung der Zeichen klar ersichtlich ist.
+Für ein Programm existiert schließlich per se kein Unterschied zwischen dem Zeichen $3$ und $+$, 
+da beide denselben Datentyp (\textit{char}) haben.
 
 \subsubsection{Darstellung als Baum}
 
@@ -173,7 +207,7 @@ Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt.
   \textbf{Binäre Operatoren} sind Operatoren, welche immer zwei Operanden haben müssen
 \end{defin} 
 \begin{defin}
-  \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operandenanzahl aufgrund des
+  \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operanden-zahl aufgrund des
   Assoziativgesetzes zwischen 1 und N variieren kann
 \end{defin}
 
@@ -223,8 +257,7 @@ Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
   Falls 2 Operatoren dieselbe Priorität haben (z. B. + und -) hat 
   der rechte Operator die höhere Priorität.
   Die einzige Ausnahme ist die Potenz, bei welcher der linke Operator
-  die höhere Priorität hat
-
+  die höhere Priorität hat.
 \end{defin}
 
 Um aus diesen Regeln einen Algorithmus zu bauen, ist es hilfreich, 
@@ -264,9 +297,9 @@ lässt sich folgender Algorithmus formulieren
   Algorithmus zum Parsen eines BNF Baums
   \begin{enumerate}
     \item Überprüfe, ob der gegebene String der 1. Option der jeweiligen Definition entspricht.
-    \item Enthält die Definition eine weitere Definition, so überprüfe ob der String oder Teilstring auch dieser Definition entspricht.
+    \item Ist die Definition abhängig von einer weiteren Definition, so überprüfe ob der String oder Teilstring auch der Kinddefinition entspricht.
     \item Entspricht der String der Definition, so erweitere den Baum mit dem passenden Knoten / Blatt.
-    \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, so muss es sich um einen invaliden String handeln.
+    \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, muss es sich um einen invaliden String handeln.
   \end{enumerate}
 \end{defin}
 
@@ -372,7 +405,7 @@ Mit allen diesen Änderungen sieht die Backus-Naur-Form nun folgendermaßen aus:
 Der Algorithmus, der auf dieser Backus-Naur-Form basiert und zum Parsen eines Strings in einen
 Baum mathematischer Ausdrücke \lab{def:baum} dient kann im Source Code unter dem Pfad /server/cas/parse.ts 
 oder online über \url{https://github.com/Flosi23/cas/blob/main/server/cas/parse.ts} eingesehen werden. \newline
-Außerdem bietet sich die Möglichkeit das Verhalten des Algorithmus auf der website  \url{https://cas.dotenv.de}
+Außerdem bietet sich die Möglichkeit das Verhalten des Algorithmus auf der Website  \url{https://cas.dotenv.de}
 direkt selbst auszuprobieren. Dafür muss ein mathematischer Ausdruck welcher der konventionellen Struktur 
 entspricht \lab{def:konventionelle_struktur}
 (Dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
@@ -400,30 +433,31 @@ niederzuschreiben ohne, dass sich sein Ergebnis verändert
 \end{enumerate}
 \end{example}
 
-Obwohl alle 6 Terme equivalent sind, sind sie syntaktisch nicht gleich und würden aufgrund dessen von einem Computeralgebrasystem
+Obwohl alle 6 Terme äquivalent sind, sind sie syntaktisch nicht gleich und würden aufgrund dessen von einem Computeralgebrasystem
 vor der automatischen Vereinfachung nicht als gleich angesehen werden. Ohne eine Vereinheitlichung könnten die Terme also nicht 
 verglichen werden.
 Wieso das problematisch ist, lässt sich an einem einfachen Beispiel zeigen.
 
 \begin{example}
   Nehme man den Term $6xy+8yx$. Für einem Menschen ist klar ersichtlich, dass man diesen zu $14xy$ vereinfachen kann.
-  Ein Computeralgebrasystem könnte diese Vereinfachung aber nicht vornhemen, da es die Terme $xy$ und $yx$ nicht als gleich
-  ansehen und folglich nicht addieren würde.
+  Ein Computeralgebrasystem könnte diese Vereinfachung aber nicht vornehmen, da es die Terme $xy$ und $yx$ nicht als gleich
+  ansehen und folglich nicht addieren würde. 
 \end{example}
 
 Neben der Sortierung ist ein weiterer wichtiger Schritt Operatoren wie Division und Differenz durch andere Operatoren
 zu ersetzen, um die Anzahl möglicher Operatoren zu reduzieren und den Baum mathematischer Ausdrücke so zu simplifizieren. \newline
 Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie möglich und mathematische Gesetze 
-(wie etwa das Distributivgesetz) angwendet werden um den Term zu vereinfachen.
+(wie etwa das Distributivgesetz) angewendet werden, um den Term zu vereinfachen.
 
 \begin{defin}
   Ein Term gilt als \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
   \begin{enumerate}
     \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Kommutativgesetzes ist es möglich, 
-          dass + n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
-          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen)
+          dass $+$ n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf
+          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen).
     \item $*$ ist ein Operator mit mindestens zwei Operanden (Kommutativgesetz), von denen keiner ein Produkt sein darf. 
           Außerdem darf nur maximal ein Operand eine Zahl oder ein Bruch sein. 
+    \item Zahlen müssen in Summen und Produkten immer der 1. Operand sein.
     \item Der Operator $-$ darf nicht vorkommen, da er immer als Produkt mit -1 dargestellt werden kann.
     \item Auch der Operator $/$ darf nicht vorkommen, da man einen Quotienten immer als Produkt oder numerischen Bruch darstellen kann.
     \item Ein Quotient, der einen Bruch bei dem sowohl Zähler, und Nenner nicht Null und natürliche Zahlen sind aufweist, 
@@ -435,7 +469,7 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
 \subsection{Transformationen}
 
 Folgende Transformationen stellen die Grundlage eines jeden Algorithmus der automatischen Vereinfachung dar und können,
-wenn richtig angewandt einen Term vollständig vereinfachen
+wenn richtig angewandt einen Term vollständig vereinfachen.
 
 \subsubsection{Distributive Transformation}
 
@@ -480,7 +514,7 @@ wenn richtig angewandt einen Term vollständig vereinfachen
 
 \begin{defin}
   \label{def:potenz_transformation}
-  Die \textbf{Potenz-Transforamtionen} basieren auf den 3 Potenzgesetzen:
+  Die \textbf{Potenz-Transformationen} basieren auf den 3 Potenzgesetzen:
   \begin{enumerate}
     \item P1 $a^m * a^n = a^{m+n}$
     \item P2 $(a*b)^n   = a^n * b^n$
@@ -493,7 +527,7 @@ wenn richtig angewandt einen Term vollständig vereinfachen
 \begin{defin}
   \label{def:quotienten-transformation}
   Quotienten werden komplett entfernt und stattdessen durch ein Produkt ersetzt. 
-  Ein Faktor des Produkts (der Nenner des Quotienten) ist eine Potenz mit der Basis des Nenners und dem Exponenten $-1$
+  Ein Faktor des Produkts (der Nenner des Quotienten) ist eine Potenz mit der Basis des Nenners und dem Exponenten $-1$.
 \end{defin}
 
 \begin{example}
@@ -504,7 +538,7 @@ wenn richtig angewandt einen Term vollständig vereinfachen
 \begin{defin}
 \label{def:differenzen_transformation}
 Jede unäre Differenz wird durch eine Multiplikation mit -1 ersetzt. 
-Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt
+Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
 \end{defin}
 
 \begin{example}
@@ -519,8 +553,6 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt
 
 \begin{defin}
   \label{def:identitaeten_transformation}
-  Die Identitäten-Transformation definiert folgende Regeln welchen im Umgang mit Termen, die
-  Einsen oder Nullen enthalten angewandt werden können
   \begin{enumerate}
     \item $u+0 = u$
     \item $u*0 = 0$
@@ -565,7 +597,7 @@ Basierend auf diesen Transformationen lassen sich nun Algorithmen für die Verei
 Differenzen, Divisionen, Potenzen, Additionen, Summen und Produkten formulieren.
 
 \subsubsection{Vereinfachung einer Differenz}
-Bei der Vereinfachung einer Differenz wird nur die Differenzen-Transforamtion \lab{def:differenzen_transformation}
+Bei der Vereinfachung einer Differenz wird nur die Differenzen-Transformation \lab{def:differenzen_transformation}
 angewandt.
 
 \begin{example}
@@ -587,7 +619,7 @@ angewandt.
     \caption{Schritt 3}
   \end{figure}
   In diesem Beispiel wird die Vereinfachung des Terms $2-3$ betrachtet. Dieser wird zuerst in eine Summe
-  umgeschrieben und dann duch den Algorithmus zur Vereinfachung einer Summe zu $-1$ vereinfacht.
+  umgeschrieben und dann durch den Algorithmus zur Vereinfachung einer Summe zu $-1$ vereinfacht.
 \end{example}
 
 \subsubsection{Vereinfachung einer Division}
@@ -621,8 +653,8 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
           \item Ist die Basis eine rationale Nummer, so wird die numerische Transformation 3 
                 \lab{def:numerische_transformation} und auf deren Ergebnis die numerische 
                 Transformation 4 \lab{def:numerische_transformation} angewandt.
-          \item Ist die Basis eine Potenz, wird die Potenztransformation 2 \lab{def:potenz_transformation} angewandt.
-          \item Ist die Basis ein Produkt, wird die Potenztransformation 3 \lab{def:potenz_transformation} angewandt.
+          \item Ist die Basis eine Potenz, wird die Potenz-Transformation 2 \lab{def:potenz_transformation} angewandt.
+          \item Ist die Basis ein Produkt, wird die Potenz-Transformation 3 \lab{def:potenz_transformation} angewandt.
         \end{enumerate}
   \item Trifft keiner der oberen Fälle zu, wird nichts vereinfacht.
 \end{enumerate}
@@ -680,14 +712,14 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
 
 \subsubsection{Vereinfachung eines Produkts}
 Ein Produkt wird vereinfacht, indem die folgenden 
-Transformationen in genau dieser Reihenfolge angwendetwerden.
+Transformationen in genau dieser Reihenfolge angwendet werden.
 \begin{enumerate}
   \item Assoziative Transformation \lab{def:assoziative_transformation}.
-  \item Numerische Transformation 1 und 4 \lab{def:numerische_transformation}.
-  \item Gleiche Terme werden miteinander multipliziert: Anwendung der Potenz-Transformation 1 
-        \lab{def:potenz_transformation}, wenn beide Terme Potenzen mit gleicher Basis sind
+  \item Numerische Transformation 1 und 4 \lab{def:numerische_transformation}. 
+        Im selben Schritt werden gleiche Terme miteinander multipliziert: Anwendung der Potenz-Transformation 1 
+        \lab{def:potenz_transformation}, wenn beide Terme Potenzen mit gleicher Basis sind.
   \item Identitäten-Transformation 2 und 3 \lab{def:identitaeten_transformation}.
-  \item Kommutative-Transformation \lab{def:kommutative_transformation}
+  \item Kommutative Transformation \lab{def:kommutative_transformation}.
 \end{enumerate}
 
 \begin{example}
@@ -703,30 +735,103 @@ Transformationen in genau dieser Reihenfolge angwendetwerden.
       \caption{Schritt 2}
     \end{minipage}
   \end{figure}
-  \centering
-  \begin{figure}
+  \begin{figure}[h]
     \centering
     \includegraphics*[scale=0.5]{trees/product/beispiel_1_3.png}
+    \caption{Schritt 3}
   \end{figure}
-  \newline
   In diesem Beispiel wird der Term $(2*x)*(3*x^2)$ betrachtet. Zuerst wird die assoziative Transformation angewandt und
   die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die numerische 
   Transformation 1 sowie die Potenz-Transformation 1 angewendet, da die Terme $x$ und $x^2$ dieselbe Basis $x$ haben.
   Es wird keine Identitäten-Transformation angewandt, da weder $0$ noch $1$ Operanden des Produkts sind.
-  Auch die kommutative Transformation verändert nichts an der Struktur des Termes, da alle Operanden schon in der richtigen
+  Auch die kommutative Transformation verändert nichts an der Struktur des Terms, da alle Operanden schon in der richtigen
   Reihenfolge sind.
 \end{example}
 
 \subsubsection{Vereinfachung einer Summe}
 Eine Summe wird vereinfacht, indem die folgenden 
-Transformationen in genau dieser Reihenfolge angwendetwerden.
+Transformationen in genau dieser Reihenfolge angewendet werden.
 \begin{enumerate}
   \item Assoziative Transformation \lab{def:assoziative_transformation}.
   \item Numerische Transformation 2 und 4 \lab{def:numerische_transformation}.
-  \item Distributive Transformation \lab{def:distributive_transformation}
+  \item Distributive Transformation \lab{def:distributive_transformation}.
   \item Identitäten-Transformation 1 und 3 \lab{def:identitaeten_transformation}.
-  \item Kommutative-Transformation \lab{def:kommutative_transformation}
+  \item Kommutative-Transformation \lab{def:kommutative_transformation}.
 \end{enumerate}
 
-\end{document}
+\begin{example}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/sum/beispiel_1_1.png}
+      \caption{Schritt 1}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/sum/beispiel_1_2.png}
+      \caption{Schritt 2}
+    \end{minipage}
+  \end{figure}
+  \begin{figure}[h]
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/sum/beispiel_1_3.png}
+      \caption{Schritt 3}
+    \end{minipage}
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.45]{trees/sum/beispiel_1_4.png}
+      \caption{Schritt 4}
+    \end{minipage}
+  \end{figure}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics*[scale=0.5]{trees/sum/beispiel_1_5.png}
+    \caption{Schritt 5}
+  \end{figure}
+  In diesem Beispiel wird der Term $(3+x)+(4+x)$ betrachtet. Im 1. Schritt wird die assoziative Transformation angewandt.
+  Darauf folgt die 2. numerische Transformation, bei der $4$ und $3$ zu $7$ zusammengefasst werden. 
+  Im 3. Schritt wird $x+x$ im Zuge der distributiven Transformation zu $2*x$ vereinfacht.
+  Es wird keine Identitäten-Transformation angewandt, da $0$ kein Operand der Summe ist.
+  Durch die kommutative Transformation werden $7$ und $2*x$ miteinander vertauscht, da ganze Zahlen immer am 
+  Anfang von Summen stehen müssen.
+\end{example}
 
+\subsubsection{Vereinfachung eines Ausdrucks}
+Alle einzelnen Algorithmen werden in einem großen Vereinfachung Algorithmus kombiniert, 
+der zuerst alle Operanden vereinfacht, und dann abhängig vom Typ des Ausdrucks die angemessene Vereinfachung vornimmt. \\
+\newline
+Ist der Ausdruck:
+\begin{enumerate}
+  \item Undefined → undefined.
+  \item Ein Symbol oder eine ganze Zahl → Ausdruck wird nicht weiter vereinfacht.
+  \item Ein Bruch → Der Bruch wird so weit gekürzt wie möglich.
+  \item Eine Potenz → Vereinfachung einer Potenz.
+  \item Eine Division → Vereinfachung einer Division.
+  \item Ein Produkt → Vereinfachung eines Produkts.
+  \item Eine Summe → Vereinfachung einer Summe.
+  \item Eine Differenz → Vereinfachung einer Differenz
+\end{enumerate}
+
+Die Algorithmen, welche einen mathematischen Term vereinfachen können im Source Code unter
+dem Pfad /server/cas/simplify oder online über \url{https://github.com/Flosi23/cas/tree/main/server/cas/simplify}
+eingesehen werden.
+Auch hier bietet sich zudem die Möglichkeit das Verhalten der Algorithmen auf der Website 
+\url{https://cas.dotenv.de} selbst zu untersuchen. Der vereinfachte Baum ist nach Eingabe des
+Ausdrucks unter dem Reiter \glqq Simplified Expression Tree\grqq{} zu finden.
+
+\section{Schlusswort}
+
+Modern Computeralgebrasysteme sind kein Hexenwerk. Komplizierte Operationen 
+werden in immer kleinere Teilprobleme unterteilt bis das 
+Problem für einen Computer einfach lösbar ist. So kann man die Vereinfachung eines
+Ausdruckes unterteilen in die Vereinfachung einer Summe, Potenz, usw... Die Vereinfachung
+einer Summe lässt sich nun auf die Anwendung verschiedener Transformationen reduzieren.\\
+
+Was Computeralgebrasysteme aber so faszinierend macht, ist ihre Fülle an Funktionen und die Geschwindigkeit 
+in der diese angewandt werden. In diesen beiden Punkten schneidet das im Zuge dieser Arbeit
+geschriebene Programm schlecht ab. Da es weder eine eigene Programmiersprache noch vielfältige Algorithmen
+zur Manipulation von Termen anbietet, kann es kaum als Computeralgebrasystem bezeichnet werden \lab{def:cas}.
+Viel mehr sollte es als ein Hilfsmittel zur Visualisierung der automatischen Vereinfachung und des Parsing der 
+Benutzereingaben angesehen werden. Das Ziel des Programms und dieser Arbeit wurde somit erreicht.
+\end{document}
