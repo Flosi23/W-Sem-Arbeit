@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 
+
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
 
 % Set arial font
@@ -21,7 +22,12 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \usepackage{minted}
-\graphicspath{{./images/}}
+\graphicspath{{./images/}} 
+ 
+
+\usepackage{csquotes}
+\usepackage[style=numeric,sorting=ynt]{biblatex}
+\addbibresource{main.bib}
 
 % Hypthenation rules
 \hyphenation{
@@ -66,6 +72,8 @@ Was 300 vor Christus noch der Abakus war, sind heute Computeralgebrasysteme.
 Diese Systeme sind für Studenten, Forschung und Industrie ein unerlässliches Werkzeug
 und bilden ein eigenes Marktsegment.\\
 
+Aus der Definition von Computeralgebra von der \citeauthor{CA} \cite{CA}
+lässt sich folgende Definition für ein Computeralgebrasystem ableiten:
 \begin{defin}
 \label{def:cas}
 Ein Computeralgebrasystem ist ein Programm, welches Methoden zum Lösen mathematisch
@@ -154,7 +162,7 @@ da beide denselben Datentyp (\textit{char}) haben.
 
 Ideal wäre also eine Datenstruktur, welche sowohl die Bedeutung der Zeichen als auch die Operatorrangfolge speichert,
 sodass diese nicht neu berechnet werden müssen. \newline
-Dafür ist es wichtig zu verstehen, dass jeder mathematische Ausdruck entweder als atomarer 
+Laut \citeauthor{CAS_EA} \cite[81]{CAS_EA} entweder als atomarer 
 oder zusammengesetzter Ausdruck klassifiziert werden kann.
 
 \begin{defin}
@@ -182,7 +190,7 @@ eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusamm
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_1_baum.png}
-  \caption{Der Baum für den Term $3+4*5$}
+  \caption{Der Baum für den Term $3+4*5$.}
 \end{figure}
 
 \begin{example}
@@ -199,16 +207,16 @@ In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes se
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.25]{UML_Ausdruecke.png}
-  \caption{UML Diagramm aller Ausdrücke}
+  \caption{UML Diagramm aller Ausdrücke.}
 \end{figure}
 
 Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt.
 \begin{defin}
-  \textbf{Binäre Operatoren} sind Operatoren, welche immer zwei Operanden haben müssen
+  \textbf{Binäre Operatoren} sind Operatoren, welche immer zwei Operanden haben müssen.
 \end{defin} 
 \begin{defin}
   \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operanden-zahl aufgrund des
-  Assoziativgesetzes zwischen 1 und N variieren kann
+  Assoziativgesetzes zwischen 1 und N variieren kann.
 \end{defin}
 
 Wie einem vielleicht auffällt, ist auch der Bruch ein Operator. 
@@ -219,7 +227,7 @@ Im Baum wird ein Bruch also wie folgt dargestellt:
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_baum_frac.png}
-  \caption{Ein Bruch im Baum mathematischer Ausdrücke}
+  \caption{Ein Bruch im Baum mathematischer Ausdrücke.}
 \end{figure}
 
 \subsection{Parsen}
@@ -227,7 +235,9 @@ In einem Computeralgebrasystem wird ein Term also in Form eines Baumes dargestel
 Für den Benutzer wäre es allerdings weder intuitiv noch einfach, einen Term als Baum anzugeben. 
 Die Eingabe als String sollte also beibehalten werden. 
 Folglich ist es erforderlich, die Zeichenkette nach Eingabe in einen Baum umzuwandeln.
-Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
+Um die Struktur der Eingaben zu kennen ist es notwendig diese zu definieren. Hier wurde
+die Definition \citeauthor{CAS_EA}s \cite[86 - 87]{CAS_EA} leicht abgeändert. Insbesondere
+wurde die Anzahl möglicher Operatoren reduziert.
 
 \begin{defin}
   \label{def:konventionelle_struktur}
@@ -235,9 +245,9 @@ Dafür ist es notwendig, die Struktur einer Eingabe genau zu definieren.
   Diese Struktur ist auch die, die in der Mathematik verwendet wird. Hier gilt:
 
   \begin{enumerate}
-    \item die Operatoren $+$ und $-$ haben entweder 1 oder 2 Operanten
-    \item die Operatoren $*$, $/$, und \textrm{\textasciicircum} haben immer 2 Operanten
-    \item die Operanden der Operatoren  sind Algebraische Ausdrücke
+    \item die Operatoren $+$ und $-$ haben entweder 1 oder 2 Operanten.
+    \item die Operatoren $*$, $/$, und \textrm{\textasciicircum} haben immer 2 Operanten.
+    \item die Operanden der Operatoren  sind Algebraische Ausdrücke.
   \end{enumerate}
 
   Jeder Ausdruck kann immer einem Klammerlevel zugeordnet werden. 
@@ -265,7 +275,8 @@ eine Grammatik für einen mathematischen Ausdruck unter Beachtung der eben defin
 in Form einer Backus-Naur-Form zu definieren. 
 
 \begin{defin}
-  Eine \textbf{Backus-Naur-Form} (BNF) ist eine Notationsform, um die Grammatik von Sprachen zu definieren. 
+  Eine \textbf{Backus-Naur-Form} (BNF) ist nach der Definition von \citeauthor{A_COMP} \cite{A_COMP}
+  eine Notationsform, um die Grammatik von Sprachen zu definieren. 
   Der Syntax einer Backus-Naur-Form ist sehr einfach zu verstehen, da es nur 3 Symbole gibt.  
 
   \begin{table}[h]
@@ -311,13 +322,15 @@ zum Beispiel für den Input $2+3$ folgenden Baum generieren.
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_1.png}
-  \caption{Parse Tree für den Input $2+3$}
+  \caption{Parse Tree für den Input $2+3$.}
 \end{figure}
 
 Ziel ist es nun, eine Backus-Naur-Form für einen mathematischen Ausdruck 
 zu definieren, welche alle Aspekte der Definition 
 eines mathematischen Ausdrucks in der konventionellen Struktur 
-\lab{def:konventionelle_struktur} berücksichtigt.
+\lab{def:konventionelle_struktur} berücksichtigt. Dabei dient die
+Definition einer Backus-Naur-Form für mathematische Ausdrücke von \citeauthor{BNF_PT}
+\cite{BNF_PT} als Vorlage.
 
 \begin{minted}{bnf}
 <exp>       ::= <exp> + <exp> | <exp> * <exp> | <exp> - <exp> | 
@@ -340,12 +353,12 @@ Allerdings ist nur der 1. Baum korrekt.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_2_1.png}
-  \caption{1. Möglicher Baum für $6+3*4$}
+  \caption{1. Möglicher Baum für $6+3*4$.}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_2_2.png}
-  \caption{2. Möglicher Baum für $6+3*4$}
+  \caption{2. Möglicher Baum für $6+3*4$.}
 \end{minipage}
 \end{figure}
 
@@ -374,12 +387,12 @@ mit zwei verschiedenen Ergebnissen.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_3_1.png}
-  \caption{1. Möglicher Baum für $4-5-2$}
+  \caption{1. Möglicher Baum für $4-5-2$.}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=0.5]{trees/beispiel_bnf_3_2.png}
-  \caption{2. Möglicher Baum für $4-5-2$}
+  \caption{2. Möglicher Baum für $4-5-2$.}
 \end{minipage}
 \end{figure}
 
@@ -450,7 +463,8 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
 (wie etwa das Distributivgesetz) angewendet werden, um den Term zu vereinfachen.
 
 \begin{defin}
-  Ein Term gilt als \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
+  Ein Term gilt laut \citeauthor{CAS_EA} \cite[90 92]{CAS_EA} als
+  \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
   \begin{enumerate}
     \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Kommutativgesetzes ist es möglich, 
           dass $+$ n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf
@@ -468,7 +482,8 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
 
 \subsection{Transformationen}
 
-Folgende Transformationen stellen die Grundlage eines jeden Algorithmus der automatischen Vereinfachung dar und können,
+Folgende Transformationen \citeauthor{CAS_MM}s \cite[64 - 79]{CAS_MM}
+stellen die Grundlage eines jeden Algorithmus der automatischen Vereinfachung dar und können,
 wenn richtig angewandt einen Term vollständig vereinfachen.
 
 \subsubsection{Distributive Transformation}
@@ -605,18 +620,18 @@ angewandt.
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/difference/beispiel_1_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von $2-3$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/difference/beispiel_1_2.png}
-      \caption{Schritt 2}
+      \caption{Anwedung der Differenzen-Transformation.}
     \end{minipage}
   \end{figure}
   \begin{figure}[h]
     \centering
     \includegraphics[scale=0.4]{trees/difference/beispiel_1_3.png}
-    \caption{Schritt 3}
+    \caption{Die vollständig vereinfachte Summe.}
   \end{figure}
   In diesem Beispiel wird die Vereinfachung des Terms $2-3$ betrachtet. Dieser wird zuerst in eine Summe
   umgeschrieben und dann durch den Algorithmus zur Vereinfachung einer Summe zu $-1$ vereinfacht.
@@ -624,19 +639,19 @@ angewandt.
 
 \subsubsection{Vereinfachung einer Division}
 Sind Zähler und Nenner rationale Zahlen, wird die Division zu einem Bruch umgeschrieben.
-Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} angewandt.
+Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} angewandt.
 
 \begin{example}
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/division/beispiel_1_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von $\frac{2}{3}$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/division/beispiel_1_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung der Quotienten-Transformation.}
     \end{minipage}
   \end{figure}
   Der Term $\frac{2}{x}$ wird in ein Produkt umgeschrieben und dann so weit es geht vereinfacht. In diesem Fall
@@ -648,13 +663,13 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
   \item Ist die Basis 0, wird die Identitäten-Transformation 4 \lab{def:identitaeten_transformation} angewandt.
   \item Ist der Exponent eine ganze Zahl:
         \begin{enumerate}
-          \item Ist der Exponent 0 oder 1, wird die Identitäten-Transformation 6 oder 7 
+          \item Ist der Exponent 0 oder 1, wird die 6. beziehungsweise 7. Identitäten-Transformation
                 \lab{def:identitaeten_transformation} angewandt.
-          \item Ist die Basis eine rationale Nummer, so wird die numerische Transformation 3 
+          \item Ist die Basis eine rationale Nummer, so wird die 3. numerische Transformation
                 \lab{def:numerische_transformation} und auf deren Ergebnis die numerische 
                 Transformation 4 \lab{def:numerische_transformation} angewandt.
-          \item Ist die Basis eine Potenz, wird die Potenz-Transformation 2 \lab{def:potenz_transformation} angewandt.
-          \item Ist die Basis ein Produkt, wird die Potenz-Transformation 3 \lab{def:potenz_transformation} angewandt.
+          \item Ist die Basis eine Potenz, wird die 2. Potenz-Transformation \lab{def:potenz_transformation} angewandt.
+          \item Ist die Basis ein Produkt, wird die 3. Potenz-Transformation \lab{def:potenz_transformation} angewandt.
         \end{enumerate}
   \item Trifft keiner der oberen Fälle zu, wird nichts vereinfacht.
 \end{enumerate}
@@ -664,33 +679,33 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_1_1.png}
-      \caption{Schritt 1}
+      \caption{Baum des Ausdruckes $\frac{2}{3}^2$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_1_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung der 3. numerische Transformation.}
     \end{minipage}
   \end{figure}
-  Da der Exponent im Term $\frac{2}{3}^2$ eine ganze Zahl ist, wird hier die numerische Transformation 3 angewandt. 
-  Der resultierende Bruch wird nicht weiter durch die numerische Transformation 4 vereinfacht,
+  Da der Exponent im Term $\frac{2}{3}^2$ eine ganze Zahl ist, wird hier die 3. numerische Transformation angewandt. 
+  Der resultierende Bruch wird nicht weiter durch die 4. numerische Transformation vereinfacht,
   da er schon vollständig vereinfacht ist.
 \end{example}
 
 \begin{example}
-  \begin{figure}[h]
+  \begin{figure}[h!]
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_2_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von ${x^2}^2$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_2_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung der 3. Potenz-Transformation.}
     \end{minipage}
   \end{figure}
-  Der Term ${x^2}^2$ wird mithilfe der Potenz-Transformation 3 vereinfacht. 
+  Der Term ${x^2}^2$ wird mithilfe der 3. Potenz-Transformation vereinfacht. 
 \end{example}
 
 \begin{example}
@@ -698,21 +713,21 @@ Sonst wird die Quotienten Transformation \lab{def:quotienten-transformation} ang
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_3_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von ${(a*b)^2}$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_3_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung 2. Potenz-Transformation.}
     \end{minipage}
   \end{figure}
-  Ist die Basis einer Potenz ein Produkt, so wie bei dem Term ${{(a*b)}^2}$, so wird die 2.
+  Ist die Basis einer Potenz ein Produkt, wie etwa bei dem Term ${{(a*b)}^2}$, so wird die 2.
   Potenz-Transformation angewendet.
 \end{example}
 
 \subsubsection{Vereinfachung eines Produkts}
 Ein Produkt wird vereinfacht, indem die folgenden 
-Transformationen in genau dieser Reihenfolge angwendet werden.
+Transformationen in genau dieser Reihenfolge angewendet werden.
 \begin{enumerate}
   \item Assoziative Transformation \lab{def:assoziative_transformation}.
   \item Numerische Transformation 1 und 4 \lab{def:numerische_transformation}. 
@@ -727,22 +742,22 @@ Transformationen in genau dieser Reihenfolge angwendet werden.
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/product/beispiel_1_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von $(2*x)*(3*x^2)$.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/product/beispiel_1_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung der assoziativen Transformation.}
     \end{minipage}
   \end{figure}
   \begin{figure}[h]
     \centering
     \includegraphics*[scale=0.5]{trees/product/beispiel_1_3.png}
-    \caption{Schritt 3}
+    \caption{Anwendung der 1. numerischen Transformation und der 1. Potenz-Transformation}
   \end{figure}
   In diesem Beispiel wird der Term $(2*x)*(3*x^2)$ betrachtet. Zuerst wird die assoziative Transformation angewandt und
-  die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die numerische 
-  Transformation 1 sowie die Potenz-Transformation 1 angewendet, da die Terme $x$ und $x^2$ dieselbe Basis $x$ haben.
+  die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die 1. numerische 
+  Transformation sowie die 1. Potenz-Transformation angewendet, da die Terme $x$ und $x^2$ dieselbe Basis $x$ haben.
   Es wird keine Identitäten-Transformation angewandt, da weder $0$ noch $1$ Operanden des Produkts sind.
   Auch die kommutative Transformation verändert nichts an der Struktur des Terms, da alle Operanden schon in der richtigen
   Reihenfolge sind.
@@ -764,30 +779,30 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/sum/beispiel_1_1.png}
-      \caption{Schritt 1}
+      \caption{Baum von $(3+x)+(4+x)$}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/sum/beispiel_1_2.png}
-      \caption{Schritt 2}
+      \caption{Anwendung der assoziativen Transformation.}
     \end{minipage}
   \end{figure}
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/sum/beispiel_1_3.png}
-      \caption{Schritt 3}
+      \caption{Anwendung der 2. numerischen Transformation.}
     \end{minipage}
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.45]{trees/sum/beispiel_1_4.png}
-      \caption{Schritt 4}
+      \caption{Anwendung der distributiven Transformation.}
     \end{minipage}
   \end{figure}
   \begin{figure}[h!]
     \centering
     \includegraphics*[scale=0.5]{trees/sum/beispiel_1_5.png}
-    \caption{Schritt 5}
+    \caption{Anwendung der kommutativen Transformation.}
   \end{figure}
   In diesem Beispiel wird der Term $(3+x)+(4+x)$ betrachtet. Im 1. Schritt wird die assoziative Transformation angewandt.
   Darauf folgt die 2. numerische Transformation, bei der $4$ und $3$ zu $7$ zusammengefasst werden. 
@@ -834,4 +849,8 @@ geschriebene Programm schlecht ab. Da es weder eine eigene Programmiersprache no
 zur Manipulation von Termen anbietet, kann es kaum als Computeralgebrasystem bezeichnet werden \lab{def:cas}.
 Viel mehr sollte es als ein Hilfsmittel zur Visualisierung der automatischen Vereinfachung und des Parsing der 
 Benutzereingaben angesehen werden. Das Ziel des Programms und dieser Arbeit wurde somit erreicht.
+
+\section{Bibliografie}
+\printbibliography[heading=none]
+ 
 \end{document}
