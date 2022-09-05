@@ -3,7 +3,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 
-
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
 
 % Set arial font
@@ -310,7 +309,7 @@ lässt sich folgender Algorithmus formulieren
     \item Überprüfe, ob der gegebene String der 1. Option der jeweiligen Definition entspricht.
     \item Ist die Definition abhängig von einer weiteren Definition, so überprüfe ob der String oder Teilstring auch der Kinddefinition entspricht.
     \item Entspricht der String der Definition, so erweitere den Baum mit dem passenden Knoten / Blatt.
-    \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, muss es sich um einen invaliden String handeln.
+    \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, so muss es sich um einen invaliden String handeln.
   \end{enumerate}
 \end{defin}
 
@@ -466,10 +465,12 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
   Ein Term gilt laut \citeauthor{CAS_EA} \cite[90 92]{CAS_EA} als
   \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
   \begin{enumerate}
-    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Kommutativgesetzes ist es möglich, 
-          dass $+$ n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf
+    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Assoziativgesetzes ist es möglich, 
+          dass Plus n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
           (andernfalls könnte man den Ausdruck noch weiter zusammenfassen).
-    \item $*$ ist ein Operator mit mindestens zwei Operanden (Kommutativgesetz), von denen keiner ein Produkt sein darf. 
+    \item $*$ ist ein Operator mit mindestens zwei Operanden, von denen keiner ein Produkt sein darf. 
+          Auch eine Summe darf kein Operand einer Multiplikation sein, da diese immer mithilfe des Distributivgesetzes
+          vereinfacht werden kann.
           Außerdem darf nur maximal ein Operand eine Zahl oder ein Bruch sein. 
     \item Zahlen müssen in Summen und Produkten immer der 1. Operand sein.
     \item Der Operator $-$ darf nicht vorkommen, da er immer als Produkt mit -1 dargestellt werden kann.
@@ -490,13 +491,21 @@ wenn richtig angewandt einen Term vollständig vereinfachen.
 
 \begin{defin}
   \label{def:distributive_transformation}
-  Bei der \textbf{distributiven Transformation} werden gleiche Terme mit konstanten Koeffizienten
-  in einer Summe basierend auf dem Distributivgesetz vereinfacht, 
+  Bei der \textbf{distributiven Transformation} werden in Summen 
+  gleiche Terme mit konstanten Koeffizienten basierend auf dem Distributivgesetz vereinfacht, 
   indem ihre Koeffizienten miteinander addiert werden. 
+  Ist einer der Operanden einer Multiplikation eine Summe so werden die anderen Operanden
+  der Multiplikation mit den Operanden der Summe multipliziert.
 \end{defin}
 
 \begin{example}
+  Anwendung der distributiven Transformation bei einer Summe: \newline
   $2x + y + \frac{3}{2}x = \frac{7}{2}x + y$
+\end{example}
+
+\begin{example}
+  Anwendung der distributiven Transformation bei einer Multiplikation: \newline
+  $6 * x * (3 + y) = 6 * (3x + xy) = 18x + 6xy$
 \end{example}
 
 \subsubsection{Assoziative Transformation}
@@ -568,6 +577,8 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
 
 \begin{defin}
   \label{def:identitaeten_transformation}
+  Die Identitäten-Transformation definiert folgende Regeln welchen im Umgang mit Termen, die
+  Einsen oder Nullen enthalten angewandt werden können
   \begin{enumerate}
     \item $u+0 = u$
     \item $u*0 = 0$
