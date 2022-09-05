@@ -419,10 +419,12 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
 \begin{defin}
   Ein Term gilt als \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
   \begin{enumerate}
-    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Kommutativgesetzes ist es möglich, 
-          dass + n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
-          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen)
-    \item $*$ ist ein Operator mit mindestens zwei Operanden (Kommutativgesetz), von denen keiner ein Produkt sein darf. 
+    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Assoziativgesetzes ist es möglich, 
+          dass Plus n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
+          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen).
+    \item $*$ ist ein Operator mit mindestens zwei Operanden, von denen keiner ein Produkt sein darf. 
+          Auch eine Summe darf kein Operand einer Multiplikation sein, da diese immer mithilfe des Distributivgesetzes
+          vereinfacht werden kann.
           Außerdem darf nur maximal ein Operand eine Zahl oder ein Bruch sein. 
     \item Der Operator $-$ darf nicht vorkommen, da er immer als Produkt mit -1 dargestellt werden kann.
     \item Auch der Operator $/$ darf nicht vorkommen, da man einen Quotienten immer als Produkt oder numerischen Bruch darstellen kann.
@@ -441,13 +443,21 @@ wenn richtig angewandt einen Term vollständig vereinfachen
 
 \begin{defin}
   \label{def:distributive_transformation}
-  Bei der \textbf{distributiven Transformation} werden gleiche Terme mit konstanten Koeffizienten
-  in einer Summe basierend auf dem Distributivgesetz vereinfacht, 
+  Bei der \textbf{distributiven Transformation} werden in Summen 
+  gleiche Terme mit konstanten Koeffizienten basierend auf dem Distributivgesetz vereinfacht, 
   indem ihre Koeffizienten miteinander addiert werden. 
+  Ist einer der Operanden einer Multiplikation eine Summe so werden die anderen Operanden
+  der Multiplikation mit den Operanden der Summe multipliziert.
 \end{defin}
 
 \begin{example}
+  Anwendung der distributiven Transformation bei einer Summe: \newline
   $2x + y + \frac{3}{2}x = \frac{7}{2}x + y$
+\end{example}
+
+\begin{example}
+  Anwendung der distributiven Transformation bei einer Multiplikation: \newline
+  $6 * x * (3 + y) = 6 * (3x + xy) = 18x + 6xy$
 \end{example}
 
 \subsubsection{Assoziative Transformation}
@@ -708,7 +718,6 @@ Transformationen in genau dieser Reihenfolge angwendetwerden.
     \centering
     \includegraphics*[scale=0.5]{trees/product/beispiel_1_3.png}
   \end{figure}
-  \newline
   In diesem Beispiel wird der Term $(2*x)*(3*x^2)$ betrachtet. Zuerst wird die assoziative Transformation angewandt und
   die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die numerische 
   Transformation 1 sowie die Potenz-Transformation 1 angewendet, da die Terme $x$ und $x^2$ dieselbe Basis $x$ haben.

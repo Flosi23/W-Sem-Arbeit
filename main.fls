@@ -823,8 +823,18 @@ INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/0
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
-OUTPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT ./main.out
+INPUT ./main.out
+OUTPUT main.out
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
@@ -841,14 +851,14 @@ INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/p
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
-OUTPUT main.toc
+INPUT ./main.toc
+INPUT main.toc
+INPUT main.toc
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8t.tfm
+OUTPUT main.toc
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
@@ -856,14 +866,19 @@ INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/ad
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvbo8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8r.tfm
 INPUT ./images//trees/beispiel_1_baum.png
 INPUT images//trees/beispiel_1_baum.png
 INPUT ./images//trees/beispiel_1_baum.png
@@ -874,24 +889,22 @@ INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/a
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvbo8t.vf
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8r.tfm
 INPUT ./images//UML_Ausdruecke.png
 INPUT images//UML_Ausdruecke.png
 INPUT ./images//UML_Ausdruecke.png
 INPUT ./images//UML_Ausdruecke.png
 INPUT ./images//UML_Ausdruecke.png
 INPUT ./images//UML_Ausdruecke.png
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT ./images//trees/beispiel_baum_frac.png
 INPUT images//trees/beispiel_baum_frac.png
 INPUT ./images//trees/beispiel_baum_frac.png
 INPUT ./images//trees/beispiel_baum_frac.png
 INPUT ./images//trees/beispiel_baum_frac.png
 INPUT ./images//trees/beispiel_baum_frac.png
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
-INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecti1095.tfm
 OUTPUT main.pyg
 INPUT ./_minted-main/default.pygstyle

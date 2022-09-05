@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.8.29)  31 AUG 2022 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.8.29)  5 SEP 2022 20:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -524,80 +524,50 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 57.
+ (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-
-No file main.toc.
+ (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
 
-LaTeX Warning: Reference `def:operatorrangfolge' on page 1 undefined on input line 95.
 
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 100.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
 {/Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: Reference `def:zusammengesetzter_ausdruck' on page 2 undefined on input line 143.
-
-
-LaTeX Warning: Reference `def:atomarer_ausdruck' on page 2 undefined on input line 144.
-
-
-LaTeX Warning: Reference `def:atomarer_ausdruck' on page 2 undefined on input line 144.
-
-<./images//trees/beispiel_1_baum.png, id=17, 260.47313pt x 225.84375pt>
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 100.
+ [2]
+<./images//trees/beispiel_1_baum.png, id=131, 260.47313pt x 225.84375pt>
 File: ./images//trees/beispiel_1_baum.png Graphic file (type png)
 <use ./images//trees/beispiel_1_baum.png>
 Package pdftex.def Info: ./images//trees/beispiel_1_baum.png  used on input line 150.
 (pdftex.def)             Requested size: 130.23624pt x 112.92159pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `def:operatorrangfolge' on page 2 undefined on input line 155.
-
-
-LaTeX Warning: Reference `def:baum' on page 2 undefined on input line 157.
-
-
-LaTeX Warning: Reference `def:atomarer_ausdruck' on page 2 undefined on input line 159.
-
-
-Overfull \hbox (4.6pt too wide) in paragraph at lines 155--160
-\T1/phv/m/sl/10.95 Wie man au^^fferdem erkennen kann, sind alle Bl^^e4tter des Baumes ganze Zahlen, also atomare
- []
-
-[2]
-<./images//UML_Ausdruecke.png, id=32, 1761.58125pt x 725.71124pt>
+<./images//UML_Ausdruecke.png, id=136, 1761.58125pt x 725.71124pt>
 File: ./images//UML_Ausdruecke.png Graphic file (type png)
 <use ./images//UML_Ausdruecke.png>
 Package pdftex.def Info: ./images//UML_Ausdruecke.png  used on input line 167.
 (pdftex.def)             Requested size: 440.39424pt x 181.42737pt.
-<./images//trees/beispiel_baum_frac.png, id=33, 213.79875pt x 146.04562pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./images//trees/beispiel_1_baum.png>]
+<./images//trees/beispiel_baum_frac.png, id=148, 213.79875pt x 146.04562pt>
 File: ./images//trees/beispiel_baum_frac.png Graphic file (type png)
 <use ./images//trees/beispiel_baum_frac.png>
 Package pdftex.def Info: ./images//trees/beispiel_baum_frac.png  used on input line 187.
 (pdftex.def)             Requested size: 106.89911pt x 73.02261pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./images//trees/beispiel_1_baum.png> <./images//UML_Ausdruecke.png>]
-
-LaTeX Warning: Reference `def:operatorrangfolge' on page 4 undefined on input line 213.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [4 <./images//UML_Ausdruecke.png> <./images//trees/beispiel_baum_frac.png>]
 \openout3 = `main.pyg'.
 
-(_minted-main/default.pygstyle) (_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
+ (_minted-main/default.pygstyle) (_minted-main/45102705847F0B4574C8D666A0626EBAA2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
  (/Users/simon/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -609,29 +579,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--262
 
  []
 
-[4 <./images//trees/beispiel_baum_frac.png>]
-<./images//trees/beispiel_bnf_1.png, id=59, 207.02344pt x 143.78719pt>
+[5]
+<./images//trees/beispiel_bnf_1.png, id=174, 207.02344pt x 143.78719pt>
 File: ./images//trees/beispiel_bnf_1.png Graphic file (type png)
 <use ./images//trees/beispiel_bnf_1.png>
 Package pdftex.def Info: ./images//trees/beispiel_bnf_1.png  used on input line 280.
 (pdftex.def)             Requested size: 103.51146pt x 71.89342pt.
-
-
-LaTeX Warning: Reference `def:konventionelle_struktur' on page 5 undefined on input line 287.
-
 \openout3 = `main.pyg'.
 
-(_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex)
-
-LaTeX Warning: Reference `def:operatorrangfolge' on page 5 undefined on input line 300.
-
-[5 <./images//trees/beispiel_bnf_1.png>]
-<./images//trees/beispiel_bnf_2_1.png, id=72, 250.68657pt x 224.33812pt>
+ (_minted-main/984B5D46BA75DB52FE1E0DB5EEABC415A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex)
+<./images//trees/beispiel_bnf_2_1.png, id=177, 250.68657pt x 224.33812pt>
 File: ./images//trees/beispiel_bnf_2_1.png Graphic file (type png)
 <use ./images//trees/beispiel_bnf_2_1.png>
 Package pdftex.def Info: ./images//trees/beispiel_bnf_2_1.png  used on input line 309.
 (pdftex.def)             Requested size: 125.34297pt x 112.16878pt.
-<./images//trees/beispiel_bnf_2_2.png, id=73, 259.7203pt x 224.33812pt>
+<./images//trees/beispiel_bnf_2_2.png, id=178, 259.7203pt x 224.33812pt>
 File: ./images//trees/beispiel_bnf_2_2.png Graphic file (type png)
 <use ./images//trees/beispiel_bnf_2_2.png>
 Package pdftex.def Info: ./images//trees/beispiel_bnf_2_2.png  used on input line 314.
@@ -641,15 +603,18 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 307--317
 []$[]$ $[]$ 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 \openout3 = `main.pyg'.
 
-(_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex)
-<./images//trees/beispiel_bnf_3_1.png, id=74, 259.7203pt x 219.06844pt>
+(_minted-main/A5D56AE98A92CDBC2D53D11F4DDD6462A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex [6 <./images//trees/beispiel_bnf_1.png>])
+<./images//trees/beispiel_bnf_3_1.png, id=188, 259.7203pt x 219.06844pt>
 File: ./images//trees/beispiel_bnf_3_1.png Graphic file (type png)
 <use ./images//trees/beispiel_bnf_3_1.png>
 Package pdftex.def Info: ./images//trees/beispiel_bnf_3_1.png  used on input line 343.
 (pdftex.def)             Requested size: 129.85983pt x 109.53394pt.
-<./images//trees/beispiel_bnf_3_2.png, id=75, 255.20343pt x 225.84375pt>
+<./images//trees/beispiel_bnf_3_2.png, id=189, 255.20343pt x 225.84375pt>
 File: ./images//trees/beispiel_bnf_3_2.png Graphic file (type png)
 <use ./images//trees/beispiel_bnf_3_2.png>
 Package pdftex.def Info: ./images//trees/beispiel_bnf_3_2.png  used on input line 348.
@@ -659,17 +624,9 @@ Overfull \hbox (2.3214pt too wide) in paragraph at lines 341--351
 []$[]$ $[]$ 
  []
 
-[6 <./images//trees/beispiel_bnf_2_1.png> <./images//trees/beispiel_bnf_2_2.png> <./images//trees/beispiel_bnf_3_1.png> <./images//trees/beispiel_bnf_3_2.png>]
 \openout3 = `main.pyg'.
 
- (_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex)
-
-LaTeX Warning: Reference `def:baum' on page 7 undefined on input line 373.
-
-
-LaTeX Warning: Reference `def:konventionelle_struktur' on page 7 undefined on input line 377.
-
-
+(_minted-main/7F5D752D7AC29B40B51E82A7BE81AA32A2EE5F176BE558B4ABB2D2EEF65E0D38.pygtex)
 Overfull \hbox (4.69914pt too wide) in paragraph at lines 372--381
 \T1/phv/m/n/10.95 werden, dass zum Beispiel der Term $\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 x$ \T1/phv/m/n/10.95 als $\OT1/cmr/m/n/10.95 3 \OMS/cmsy/m/n/10.95 ^^C \OML/cmm/m/it/10.95 x$ \T1/phv/m/n/10.95 geschrieben werden muss) in das Eingabefeld
  []
@@ -679,265 +636,191 @@ Overfull \hbox (0.22227pt too wide) in paragraph at lines 372--381
 \T1/phv/m/n/10.95 eingeben und der Knopf ^^RCalculate^^P gedr^^fcckt werden. Der vom Algorithmus generierte Baum
  []
 
-
+[7 <./images//trees/beispiel_bnf_2_1.png> <./images//trees/beispiel_bnf_2_2.png> <./images//trees/beispiel_bnf_3_1.png> <./images//trees/beispiel_bnf_3_2.png>]
 Overfull \hbox (12.69133pt too wide) in paragraph at lines 391--393
 \T1/phv/m/sl/10.95 verschiedene M^^f6glichkeiten diesen niederzuschreiben ohne, dass sich sein Ergebnis ver^^e4ndert 
  []
 
-[7]
+
 Overfull \hbox (13.72388pt too wide) in paragraph at lines 403--407
 \T1/phv/m/n/10.95 gleich angesehen werden. Ohne eine Vereinheitlichung k^^f6nnten die Terme also nicht verglichen
  []
 
+[8]
+Overfull \hbox (4.8188pt too wide) in paragraph at lines 422--425
+\T1/phv/m/sl/10.95 ist es m^^f6glich, dass Plus n viele Operanden haben kann) von denen maximal 1 Operand
+ []
 
-Overfull \hbox (3.41684pt too wide) in paragraph at lines 428--429
+
+Overfull \hbox (3.41684pt too wide) in paragraph at lines 430--431
 []\T1/phv/m/sl/10.95 Auch der Operator $\OML/cmm/m/it/10.95 =$ \T1/phv/m/sl/10.95 darf nicht vorkommen, da man einen Quotienten immer als Produkt
  []
 
 
-Overfull \hbox (4.90466pt too wide) in paragraph at lines 437--439
+Overfull \hbox (4.90466pt too wide) in paragraph at lines 439--441
 \T1/phv/m/n/10.95 Folgende Transformationen stellen die Grundlage eines jeden Algorithmus der automatischen
  []
 
-[8] [9]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 531.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 531.
 
-Overfull \hbox (1.17522pt too wide) in paragraph at lines 551--552
+Overfull \hbox (1.55429pt too wide) in paragraph at lines 446--451
+\T1/phv/m/sl/10.95 Summe so werden die anderen Operanden der Multiplikation mit den Operanden der Summe
+ []
+
+[9] [10]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 541.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 541.
+
+Overfull \hbox (1.17522pt too wide) in paragraph at lines 561--562
 [][]\T1/phv/b/n/10.95 Definition 19. []\T1/phv/m/sl/10.95 Die numerischen Transformationen definieren, wie rationale Zahlen in Termen
  []
 
-
-LaTeX Warning: Reference `def:differenzen_transformation' on page 10 undefined on input line 568.
-
-<./images//trees/difference/beispiel_1_1.png, id=140, 263.98625pt x 188.705pt>
+<./images//trees/difference/beispiel_1_1.png, id=254, 263.98625pt x 188.705pt>
 File: ./images//trees/difference/beispiel_1_1.png Graphic file (type png)
 <use ./images//trees/difference/beispiel_1_1.png>
-Package pdftex.def Info: ./images//trees/difference/beispiel_1_1.png  used on input line 575.
+Package pdftex.def Info: ./images//trees/difference/beispiel_1_1.png  used on input line 585.
 (pdftex.def)             Requested size: 105.59262pt x 75.48065pt.
-<./images//trees/difference/beispiel_1_2.png, id=141, 263.98625pt x 186.6975pt>
+<./images//trees/difference/beispiel_1_2.png, id=255, 263.98625pt x 186.6975pt>
 File: ./images//trees/difference/beispiel_1_2.png Graphic file (type png)
 <use ./images//trees/difference/beispiel_1_2.png>
-Package pdftex.def Info: ./images//trees/difference/beispiel_1_2.png  used on input line 580.
+Package pdftex.def Info: ./images//trees/difference/beispiel_1_2.png  used on input line 590.
 (pdftex.def)             Requested size: 105.59262pt x 74.67767pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 573--583
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 583--593
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images//trees/difference/beispiel_1_3.png, id=142, 126.4725pt x 186.6975pt>
+<./images//trees/difference/beispiel_1_3.png, id=256, 126.4725pt x 186.6975pt>
 File: ./images//trees/difference/beispiel_1_3.png Graphic file (type png)
 <use ./images//trees/difference/beispiel_1_3.png>
-Package pdftex.def Info: ./images//trees/difference/beispiel_1_3.png  used on input line 586.
+Package pdftex.def Info: ./images//trees/difference/beispiel_1_3.png  used on input line 596.
 (pdftex.def)             Requested size: 50.58809pt x 74.67767pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.7701pt too wide) in paragraph at lines 589--591
+Overfull \hbox (5.7701pt too wide) in paragraph at lines 599--601
 \T1/phv/m/sl/10.95 wird zuerst in eine Summe umgeschrieben und dann duch den Algorithmus zur Vereinfachung
  []
 
-[10]
-
-LaTeX Warning: Reference `def:quotienten-transformation' on page 11 undefined on input line 595.
-
-<./images//trees/division/beispiel_1_1.png, id=169, 261.97874pt x 184.69pt>
+<./images//trees/division/beispiel_1_1.png, id=258, 261.97874pt x 184.69pt>
 File: ./images//trees/division/beispiel_1_1.png Graphic file (type png)
 <use ./images//trees/division/beispiel_1_1.png>
-Package pdftex.def Info: ./images//trees/division/beispiel_1_1.png  used on input line 601.
+Package pdftex.def Info: ./images//trees/division/beispiel_1_1.png  used on input line 611.
 (pdftex.def)             Requested size: 104.78964pt x 73.87468pt.
-<./images//trees/division/beispiel_1_2.png, id=170, 331.2375pt x 293.095pt>
+<./images//trees/division/beispiel_1_2.png, id=259, 331.2375pt x 293.095pt>
 File: ./images//trees/division/beispiel_1_2.png Graphic file (type png)
 <use ./images//trees/division/beispiel_1_2.png>
-Package pdftex.def Info: ./images//trees/division/beispiel_1_2.png  used on input line 606.
+Package pdftex.def Info: ./images//trees/division/beispiel_1_2.png  used on input line 616.
 (pdftex.def)             Requested size: 132.49265pt x 117.23592pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 599--609
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 609--619
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: Reference `def:identitaeten_transformation' on page 11 undefined on input line 616.
-
-
-LaTeX Warning: Reference `def:identitaeten_transformation' on page 11 undefined on input line 620.
-
-[11 <./images//trees/difference/beispiel_1_1.png> <./images//trees/difference/beispiel_1_2.png> <./images//trees/difference/beispiel_1_3.png> <./images//trees/division/beispiel_1_1.png> <./images//trees/division/beispiel_1_2.png>]
-
-LaTeX Warning: Reference `def:numerische_transformation' on page 12 undefined on input line 622.
-
-
-LaTeX Warning: Reference `def:numerische_transformation' on page 12 undefined on input line 623.
-
-
-LaTeX Warning: Reference `def:potenz_transformation' on page 12 undefined on input line 624.
-
-
-LaTeX Warning: Reference `def:potenz_transformation' on page 12 undefined on input line 625.
-
-<./images//trees/power/beispiel_1_1.png, id=189, 330.23375pt x 294.09875pt>
+[11] [12 <./images//trees/difference/beispiel_1_1.png> <./images//trees/difference/beispiel_1_2.png> <./images//trees/difference/beispiel_1_3.png> <./images//trees/division/beispiel_1_1.png> <./images//trees/division/beispiel_1_2.png>]
+<./images//trees/power/beispiel_1_1.png, id=304, 330.23375pt x 294.09875pt>
 File: ./images//trees/power/beispiel_1_1.png Graphic file (type png)
 <use ./images//trees/power/beispiel_1_1.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_1_1.png  used on input line 634.
+Package pdftex.def Info: ./images//trees/power/beispiel_1_1.png  used on input line 644.
 (pdftex.def)             Requested size: 132.09114pt x 117.6374pt.
-<./images//trees/power/beispiel_1_2.png, id=190, 259.97125pt x 188.705pt>
+<./images//trees/power/beispiel_1_2.png, id=305, 259.97125pt x 188.705pt>
 File: ./images//trees/power/beispiel_1_2.png Graphic file (type png)
 <use ./images//trees/power/beispiel_1_2.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_1_2.png  used on input line 639.
+Package pdftex.def Info: ./images//trees/power/beispiel_1_2.png  used on input line 649.
 (pdftex.def)             Requested size: 103.98665pt x 75.48065pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 632--642
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 642--652
 []$[]$ $[]$ 
  []
 
-<./images//trees/power/beispiel_2_1.png, id=191, 332.24126pt x 294.09875pt>
+<./images//trees/power/beispiel_2_1.png, id=306, 332.24126pt x 294.09875pt>
 File: ./images//trees/power/beispiel_2_1.png Graphic file (type png)
 <use ./images//trees/power/beispiel_2_1.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_2_1.png  used on input line 652.
+Package pdftex.def Info: ./images//trees/power/beispiel_2_1.png  used on input line 662.
 (pdftex.def)             Requested size: 132.89413pt x 117.6374pt.
-<./images//trees/power/beispiel_2_2.png, id=192, 264.99pt x 190.7125pt>
+<./images//trees/power/beispiel_2_2.png, id=307, 264.99pt x 190.7125pt>
 File: ./images//trees/power/beispiel_2_2.png Graphic file (type png)
 <use ./images//trees/power/beispiel_2_2.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_2_2.png  used on input line 657.
+Package pdftex.def Info: ./images//trees/power/beispiel_2_2.png  used on input line 667.
 (pdftex.def)             Requested size: 105.99411pt x 76.28363pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 650--660
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 660--670
 []$[]$ $[]$ 
  []
 
-<./images//trees/power/beispiel_3_1.png, id=193, 330.23375pt x 295.1025pt>
+<./images//trees/power/beispiel_3_1.png, id=308, 330.23375pt x 295.1025pt>
 File: ./images//trees/power/beispiel_3_1.png Graphic file (type png)
 <use ./images//trees/power/beispiel_3_1.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_3_1.png  used on input line 668.
+Package pdftex.def Info: ./images//trees/power/beispiel_3_1.png  used on input line 678.
 (pdftex.def)             Requested size: 132.09114pt x 118.0389pt.
-<./images//trees/power/beispiel_3_2.png, id=194, 531.9875pt x 293.095pt>
+<./images//trees/power/beispiel_3_2.png, id=309, 531.9875pt x 293.095pt>
 File: ./images//trees/power/beispiel_3_2.png Graphic file (type png)
 <use ./images//trees/power/beispiel_3_2.png>
-Package pdftex.def Info: ./images//trees/power/beispiel_3_2.png  used on input line 673.
+Package pdftex.def Info: ./images//trees/power/beispiel_3_2.png  used on input line 683.
 (pdftex.def)             Requested size: 212.79123pt x 117.23592pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 666--676
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 676--686
 []$[]$ $[]$ 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (17.53073pt too wide) in paragraph at lines 682--684
+Overfull \hbox (17.53073pt too wide) in paragraph at lines 692--694
 \T1/phv/m/n/10.95 Ein Produkt wird vereinfacht, indem die folgenden Transformationen in genau dieser Reihenfolge
  []
 
-
-LaTeX Warning: Reference `def:assoziative_transformation' on page 12 undefined on input line 685.
-
-[12 <./images//trees/power/beispiel_1_1.png> <./images//trees/power/beispiel_1_2.png> <./images//trees/power/beispiel_2_1.png> <./images//trees/power/beispiel_2_2.png>]
-
-LaTeX Warning: Reference `def:numerische_transformation' on page 13 undefined on input line 686.
-
-
-LaTeX Warning: Reference `def:potenz_transformation' on page 13 undefined on input line 688.
-
-
-Overfull \hbox (4.316pt too wide) in paragraph at lines 687--689
+[13 <./images//trees/power/beispiel_1_1.png> <./images//trees/power/beispiel_1_2.png> <./images//trees/power/beispiel_2_1.png> <./images//trees/power/beispiel_2_2.png> <./images//trees/power/beispiel_3_1.png> <./images//trees/power/beispiel_3_2.png>]
+Overfull \hbox (4.316pt too wide) in paragraph at lines 697--699
 []\T1/phv/m/n/10.95 Gleiche Terme werden miteinander multipliziert: Anwendung der Potenz-Transformation
  []
 
-
-LaTeX Warning: Reference `def:identitaeten_transformation' on page 13 undefined on input line 689.
-
-
-LaTeX Warning: Reference `def:kommutative_transformation' on page 13 undefined on input line 690.
-
-<./images//trees/product/beispiel_1_1.png, id=215, 456.20438pt x 304.13625pt>
+<./images//trees/product/beispiel_1_1.png, id=334, 456.20438pt x 304.13625pt>
 File: ./images//trees/product/beispiel_1_1.png Graphic file (type png)
 <use ./images//trees/product/beispiel_1_1.png>
-Package pdftex.def Info: ./images//trees/product/beispiel_1_1.png  used on input line 697.
+Package pdftex.def Info: ./images//trees/product/beispiel_1_1.png  used on input line 707.
 (pdftex.def)             Requested size: 205.29005pt x 136.86003pt.
-<./images//trees/product/beispiel_1_2.png, id=216, 454.69875pt x 223.58531pt>
+<./images//trees/product/beispiel_1_2.png, id=335, 454.69875pt x 223.58531pt>
 File: ./images//trees/product/beispiel_1_2.png Graphic file (type png)
 <use ./images//trees/product/beispiel_1_2.png>
-Package pdftex.def Info: ./images//trees/product/beispiel_1_2.png  used on input line 702.
+Package pdftex.def Info: ./images//trees/product/beispiel_1_2.png  used on input line 712.
 (pdftex.def)             Requested size: 204.61253pt x 100.61244pt.
 
-Overfull \hbox (2.3214pt too wide) in paragraph at lines 695--705
+Overfull \hbox (2.3214pt too wide) in paragraph at lines 705--715
 []$[]$ $[]$ 
  []
 
-<./images//trees/product/beispiel_1_3.png, id=217, 249.18094pt x 219.82124pt>
+<./images//trees/product/beispiel_1_3.png, id=336, 249.18094pt x 219.82124pt>
 File: ./images//trees/product/beispiel_1_3.png Graphic file (type png)
 <use ./images//trees/product/beispiel_1_3.png>
-Package pdftex.def Info: ./images//trees/product/beispiel_1_3.png  used on input line 709.
+Package pdftex.def Info: ./images//trees/product/beispiel_1_3.png  used on input line 719.
 (pdftex.def)             Requested size: 124.59015pt x 109.91034pt.
 
-/Users/simon/Documents/W-Sem-Arbeit/main.tex:711: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.711   \newline
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[13 <./images//trees/product/beispiel_1_3.png> <./images//trees/power/beispiel_3_1.png> <./images//trees/power/beispiel_3_2.png> <./images//trees/product/beispiel_1_1.png> <./images//trees/product/beispiel_1_2.png>]
-Overfull \hbox (23.60806pt too wide) in paragraph at lines 721--723
+Overfull \hbox (23.60806pt too wide) in paragraph at lines 730--732
 \T1/phv/m/n/10.95 Eine Summe wird vereinfacht, indem die folgenden Transformationen in genau dieser Reihenfolge
  []
 
-
-LaTeX Warning: Reference `def:assoziative_transformation' on page 14 undefined on input line 724.
-
-
-LaTeX Warning: Reference `def:numerische_transformation' on page 14 undefined on input line 725.
-
-
-LaTeX Warning: Reference `def:distributive_transformation' on page 14 undefined on input line 726.
-
-
-LaTeX Warning: Reference `def:identitaeten_transformation' on page 14 undefined on input line 727.
-
-
-LaTeX Warning: Reference `def:kommutative_transformation' on page 14 undefined on input line 728.
-
-[14] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ACA6BCA4FAFFE341478A580401B9A2C2;3817.
+[14 <./images//trees/product/beispiel_1_3.png> <./images//trees/product/beispiel_1_1.png> <./images//trees/product/beispiel_1_2.png>] [15] (main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: ACA6BCA4FAFFE341478A580401B9A2C2;3817.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 16354 strings out of 479778
- 291657 string characters out of 2873215
- 635353 words of memory out of 3000000
- 34608 multiletter control sequences out of 15000+600000
+ 16384 strings out of 479778
+ 292233 string characters out of 2873215
+ 639353 words of memory out of 3000000
+ 34630 multiletter control sequences out of 15000+600000
  511254 words of font info for 76 fonts, out of 8000000 for 9000
  13 hyphenation exceptions out of 8191
- 75i,10n,81p,555b,716s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 75i,10n,81p,555b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </Users/simon/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1095.pk>{/Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/simon/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (14 pages, 577546 bytes).
+Output written on main.pdf (15 pages, 595864 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 
