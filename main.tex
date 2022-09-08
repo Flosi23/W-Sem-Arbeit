@@ -404,7 +404,7 @@ sowie die Möglichkeit, mit Klammern die Operatorrangfolge zu manipulieren.
 Mit allen diesen Änderungen sieht die Backus-Naur-Form nun folgendermaßen aus:
 
 \begin{minted}{bnf}
-<exp>     ::= + <exp> | <exp> + <term> | - <exp> | <exp> - <term> | <term> 
+<exp>     ::= + <term> | <exp> + <term> | - <term> | <exp> - <term> | <term> 
 <term>    ::= <term> * <power> | <term> / <power> | <power>
 <power>   ::= <factor> ^ <power> | <factor>
 <factor>  ::= ( <exp> ) | <int> | <symbol> 
