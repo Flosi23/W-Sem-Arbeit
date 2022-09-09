@@ -32,6 +32,7 @@
 \hyphenation{
   zu-sam-men-ge-setzt-er 
   ma-the-ma-tisch-en
+  ma-the-ma-tische
   ver-wen-den
   dar-zu-stel-len
   ent-ge-gen-zu-neh-men
@@ -43,6 +44,7 @@
   Re-geln
   Im-ple-men-tie-rung
   ge-ne-rie-ren
+  Be-nutz-er-ein-ga-ben
 }
 
 
@@ -66,19 +68,20 @@
 
 \section{Einleitung}
 
-Seit Anbeginn der Mathematik existiert  die Nachfrage nach Rechenhilfsmitteln.
-Was 300 vor Christus noch der Abakus war, sind heute Computeralgebrasysteme.
+Die Nachfrage nach Rechenhilfsmitteln ist fast so alt wie die Mathematik.
+Was lange Zeit der Abakus war, sind heute Computeralgebrasysteme.
 Diese Systeme sind für Studenten, Forschung und Industrie ein unerlässliches Werkzeug
 und bilden ein eigenes Marktsegment.\\
 
-Aus der Definition von Computeralgebra von der \citeauthor{CA} \cite{CA}
+Aus der Definition von Computeralgebra der \citeauthor{CA} \cite{CA}
 lässt sich folgende Definition für ein Computeralgebrasystem ableiten:
 \begin{defin}
 \label{def:cas}
 Ein Computeralgebrasystem ist ein Programm, welches Methoden zum Lösen mathematisch
-formulierter Probleme durch symbolische Algorithmen bietet. Es beruht auf der exakten
+formulierter Probleme durch Algorithmen bietet. Es beruht auf der exakten
 endlichen Darstellung mathematischer Objekte und Strukturen.
-Das Rechnen mit beliebig langen Zahlen, Symbolen, Unbestimmten und Polynomen, 
+\end{defin}
+Das Rechnen mit beliebig großen Zahlen, Symbolen, Unbestimmten und Polynomen, 
 das Faktorisieren von Zahlen und Polynomen, das Differenzieren von Polynomen und 
 anderen Funktionen und das exakte Lösen von Differenzialgleichungen 
 sind einige konkrete Beispiele für Problemstellungen, die die meisten Computeralgebrasysteme
@@ -87,31 +90,26 @@ lösen können.
 Damit ein Computeralgebrasystem nützlich ist, sollte es folgende Eigenschaften haben:
 \begin{enumerate}
   \item Eine Benutzeroberfläche, über die der Benutzer mathematische Ausdrücke eingeben kann.
-  \item Einen Vereinfachungsalgorithmus welcher mathematiche Ausdrücke vereinfachen kann.
+  \item Einen Vereinfachungsalgorithmus, welcher mathematiche Ausdrücke vereinfachen kann.
   \item Eine große Menge an mathematischen Algorithmen und Funktionen. Dazu gehören zum Beispiel
         Algorithmen zur Bestimmung der Ableitung eines Terms.
   \item Eine eigene Programmierumgebung, insbesondere eine eigene Programmiersprache.
 \end{enumerate}
 
-\end{defin}
-
 In dieser Arbeit soll nachvollzogen werden, wie Computeralgebrasysteme mit den Texteingaben von Benutzern 
 umgehen und diese intern darstellen. Außerdem soll die Funktionsweise eines Computeralgebrasystem 
 anhand des Algorithmus der automatischen Vereinfachung dargestellt werden.
-Um dies zu erreichen, wurde ein eigenes, simples Computeralgebrasystem implementiert,
-welches die Texteingabe des Benutzers einlesen, auswerten und vereinfachen kann. 
-Zudem wird es zur Visualisierung von Beispielen verwendet und dient als Möglichkeit, 
-selbst Eingaben auszuprobieren. 
-
-Im Zusammenhang dieser Arbeit wurde die Website \url{https://cas.dotenv.de} erstellt.
-In der Website wurden die Algorithmen, welcher in dieser Arbeit vorgestellt werden implementiert
+Für diese Arbeit wurde die Website \url{https://cas.dotenv.de} erstellt.
+In dieser Website wurden die Algorithmen, welche in dieser Arbeit vorgestellt werden, implementiert
 und können visuell nachvollzogen werden.
 
-\section{Benutzereingaben}
+\section{Umgang mit Benutzereingaben}
 Die einfachste Form, einen mathematischen Ausdruck auf einem Computer einzugeben, 
 ist unter der Verwendung der Symbole, welche einem auf der Tastatur schon zur Verfügung stehen. 
-Dabei gelten folgende Beziehungen zwischen den Zeichen und ihrer mathematischen Bedeutung:
+Dabei gelten die in Tabelle \ref{table:symbols} dargestellten Beziehungen zwischen den Zeichen 
+und ihrer mathematischen Bedeutung.
 \begin{table}[h]
+\centering
 \begin{tabular}{|l|l|}
 \hline
   Zeichen               & Bedeutung         \\ \hline \hline
@@ -123,34 +121,33 @@ Dabei gelten folgende Beziehungen zwischen den Zeichen und ihrer mathematischen 
   \textasciicircum      & Potenz            \\ \hline
   a - z                 & Symbol (Variable) \\ \hline
 \end{tabular}
+\caption{Mathematische Bedeutung der Zeichen}
+\label{table:symbols}
 \end{table}
 
 Es ist mit nur diesen Zeichen möglich, eine Großzahl von mathematischen Termen darzustellen 
 und ist deswegen ein simpler, aber effektiver Weg, um Benutzereingaben entgegenzunehmen.
 
-\subsection{Darstellung im Programm}
+\subsection{Darstellung eines Ausdrucks im Programm}
 \subsubsection{Darstellung als String}
 
-Der Benutzer kann einen mathematischen Ausdruck also in Form eines Strings eingeben. 
-Den String auch als Datenstruktur zur Darstellung des Ausdrucks im Programm zu 
-verwenden hat allerdings Nachteile. 
-Um zu beurteilen, ob eine Darstellung als String für einen Computer passend ist oder nicht, 
-muss zuerst definiert werden, welche Informationen das Programm benötigt,
+Der Benutzer kann einen mathematischen Ausdruck in Form eines Strings eingeben. 
+Um zu beurteilen, ob eine Darstellung als String auch für einen Computer passend ist oder nicht, 
+muss zuerst beschrieben werden, welche Informationen das Programm benötigt,
 um mit dem Term arbeiten zu können.
-
-\begin{defin}
-  Um mit einem mathematischen Term arbeiten zu können muss ein Programm die Bedeutung
-  der einzelnen Zeichen sowie die Operatorrangfolge \lab{def:operatorrangfolge} kennen.
-\label{def:programm_infos}
-\end{defin}
+Diese sind die Bedeutung
+der einzelnen Zeichen sowie die Operatorrangfolge \lab{def:operatorrangfolge}.
 
 \begin{defin}
 Unter der \textbf{Operatorrangfolge} oder \textbf{Operatorpräzedenz} ist die Ordnung zu verstehen, 
 in welcher die Operatoren eines Ausdrucks auszuwerten sind.
-In dem Term $3+4*5$ hat der Operator $+$ die geringste Priorität und der Operator $*$ die höchste. 
-Folglich muss $4*5$ vor $3+4$ ausgerechnet werden. 
 \label{def:operatorrangfolge}
 \end{defin}
+\begin{example} \normalfont
+In dem Term $3+4*5$ hat der Operator $+$ die geringste Priorität und der Operator $*$ die höchste. 
+Folglich muss $4*5$ vor $3+4$ ausgerechnet werden. 
+\end{example}
+
 
 Ein String bietet sich folglich nicht als Datenstruktur für einen mathematischen Ausdruck 
 an, da weder die Operatorpräzedenz noch die Bedeutung der Zeichen klar ersichtlich ist.
@@ -160,18 +157,20 @@ da beide denselben Datentyp (\textit{char}) haben.
 \subsubsection{Darstellung als Baum}
 
 Ideal wäre also eine Datenstruktur, welche sowohl die Bedeutung der Zeichen als auch die Operatorrangfolge speichert,
-sodass diese nicht neu berechnet werden müssen. \newline
-Laut \citeauthor{CAS_EA} \cite[81]{CAS_EA} entweder als atomarer 
-oder zusammengesetzter Ausdruck klassifiziert werden kann.
+sodass diese nicht neu berechnet werden müssen. Ein Baum, bestehend aus Ausdrücken, ist dafür passend, da er diese Bedingungen, wie später erläutert,
+erfüllt.
+\newline
+Laut \citeauthor{CAS_EA} \cite[81]{CAS_EA} kann ein Ausdruck entweder atomar
+oder zusammengesetzt sein.
 
 \begin{defin}
-Ein \textbf{atomarer Ausdruck} ist jeder Ausdruck, der kein Operator ist, also ganze Zahlen und Symbole. 
-Atomare Ausdrücke können nicht weiter vereinfacht werden.
+Ein \textbf{atomarer Ausdruck} ist eine ganze Zahl oder ein Symbol. Atomare Ausdrücke können
+nicht weiter vereinfacht werden.
 \label{def:atomarer_ausdruck}
 \end{defin}
 
 \begin{defin}
-Jeder \textbf{zusammengesetzte Ausdruck} besteht aus einem Operator und einem oder mehreren Operanden. 
+Ein \textbf{zusammengesetzte Ausdruck} besteht aus einem Operator und einem oder mehreren Operanden. 
 Zu diesen Ausdrücken zählen Summen, Produkte, Differenzen, Divisionen und Potenzen
 \label{def:zusammengesetzter_ausdruck}
 \end{defin}
@@ -180,9 +179,10 @@ Man kann nun atomare und zusammengesetzte Ausdrücke und ihre Beziehungen zueina
 Dabei gelten folgende Regeln:
 
 \begin{defin}
-In einem \textbf{Baum mathematischer Ausdrücke} ist jeder Elternknoten ein zusammengesetzter Ausdruck. Die Kinder
-eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusammengesetzter_ausdruck} oder atomare 
-\lab{def:atomarer_ausdruck} Ausdrücke sein können. Alle Blätter des Baumes sind atomare Ausdrücke. \lab{def:atomarer_ausdruck}
+Ein \textbf{Baum mathematischer Ausdrücke} ist ein Baum, in dem jeder Elternknoten ein zusammengesetzter Ausdruck ist. 
+Die Kinder
+eines Elternknotens sind seine Operanden, welche zusammengesetze \lab{def:zusammengesetzter_ausdruck} oder atomare 
+\lab{def:atomarer_ausdruck} Ausdrücke sein können. Alle Blätter des Baumes sind atomare Ausdrücke. 
 \label{def:baum}
 \end{defin}
 
@@ -192,36 +192,54 @@ eines Elternknotens sind seine Operanden, welche Zusammengesetze \lab{def:zusamm
   \caption{Der Baum für den Term $3+4*5$.}
 \end{figure}
 
-\begin{example}
-   An dem Baum für den Term $3+4*5$ kann man erkennen, dass die Operatorrangfolge \lab{def:operatorrangfolge}
+\begin{example} \normalfont
+   An dem Baum für den Term $3+4*5$ kann man erkennen, dass die Operatorrangfolge 
    in der Datenstruktur abgebildet wird. Da der Ausdruck $4*5$ ein Kind des Operators $+$ ist, muss dieser zuerst 
-   ausgewertet werden. In einem Baum mathematischer Ausdrücke \lab{def:baum} ist die Wurzel folglich immer
+   ausgewertet werden. In einem Baum mathematischer Ausdrücke ist die Wurzel folglich immer
    der Operator mit der geringsten Priorität.
-   Wie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke \lab{def:atomarer_ausdruck}.
+   Wie man außerdem erkennen kann, sind alle Blätter des Baumes ganze Zahlen, also atomare Ausdrücke.
 \end{example}
 
-Von welchem Datentyp die Blätter und Knoten sind, ist ganz von der eigenen Implementierung abhängig.
-In diesem Computer Algebra System können folgende Ausdrücke Teil des Baumes sein:
+Von welchem Datentyp die Blätter und Knoten sind, ist ganz von der jeweiligen Implementierung abhängig.
+In dem für diese Arbeit geschriebenen Programm können folgende Ausdrücke Teil des Baumes sein:
+Welche Ausdrücke Teil des Baumes, in dem für diese Arbeit geschriebenen Programm sein können, ist in 
+Abbildung \ref{img:uml} zu sehen.
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.25]{UML_Ausdruecke.png}
   \caption{UML Diagramm aller Ausdrücke.}
+  \label{img:uml}
 \end{figure}
 
 Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt.
 \begin{defin}
-  \textbf{Binäre Operatoren} sind Operatoren, welche immer zwei Operanden haben müssen.
+  \textbf{Binäre Operatoren} sind Operatoren, die immer zwei Operanden haben.
 \end{defin} 
 \begin{defin}
-  \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operanden-zahl aufgrund des
-  Assoziativgesetzes zwischen 1 und N variieren kann.
+  \textbf{Nicht-Binäre Operatoren} sind Operatoren, deren Operandenzahl zwischen 1 und N variieren kann.
 \end{defin}
+\begin{example} \normalfont
+  \begin{figure}[h]
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[scale=0.5]{trees/beispiel_non_binary_1.png}
+    \caption{$x+y+z$ in binären Summen}
+  \end{minipage}
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[scale=0.5]{trees/beispiel_non_binary_2.png}
+    \caption{$x+y*z$ als eine Summe mit 3 Kindern}
+  \end{minipage}
+  \end{figure}
+  Die Summe $x+y+z$ wird von Menschen normalerweise interpretiert als: $(x+y)+z$.
+  Die Operatorrangfolge ist hier aber nicht relevant, es gilt:
+  $(x+y)+z = x+(y+z)$. Aus diesem Grund muss die Operatorrangfolge auch im Baum
+  nicht berücksichtigt werden. Der Ausdruck kann also als Summe mit 3 Operanden dargestellt werden.
+\end{example}
 
-Wie einem vielleicht auffällt, ist auch der Bruch ein Operator. 
-Das ist darin begründet, dass ein Bruch genau genommen auch eine Operation (Division) ist, 
-allerdings eine, die nicht zu einer ganzen Zahl vereinfacht werden kann. 
-Im Baum wird ein Bruch also wie folgt dargestellt:
+Da der Bruchstrich äquivalent zu einer Division ist, ist dieser auch ein Operator mit 2 Operanden
+und wird im Baum mathematischer Ausdrücke wie folgt dargestellt:
 
 \begin{figure}[h]
   \centering
@@ -229,12 +247,14 @@ Im Baum wird ein Bruch also wie folgt dargestellt:
   \caption{Ein Bruch im Baum mathematischer Ausdrücke.}
 \end{figure}
 
-\subsection{Parsen}
+\subsection{Parsen von Benutzereingaben}\label{abschnitt:parsen}
+
+\subsubsection{Konventionelle Struktur eines Ausdrucks}
 In einem Computeralgebrasystem wird ein Term also in Form eines Baumes dargestellt. 
 Für den Benutzer wäre es allerdings weder intuitiv noch einfach, einen Term als Baum anzugeben. 
 Die Eingabe als String sollte also beibehalten werden. 
 Folglich ist es erforderlich, die Zeichenkette nach Eingabe in einen Baum umzuwandeln.
-Um die Struktur der Eingaben zu kennen ist es notwendig diese zu definieren. Hier wurde
+Um die Struktur der Eingaben zu kennen, ist es notwendig diese zu definieren. Hier wurde
 die Definition \citeauthor{CAS_EA}s \cite[86 - 87]{CAS_EA} leicht abgeändert. Insbesondere
 wurde die Anzahl möglicher Operatoren reduziert.
 
@@ -244,8 +264,8 @@ wurde die Anzahl möglicher Operatoren reduziert.
   Diese Struktur ist auch die, die in der Mathematik verwendet wird. Hier gilt:
 
   \begin{enumerate}
-    \item die Operatoren $+$ und $-$ haben entweder 1 oder 2 Operanten.
-    \item die Operatoren $*$, $/$, und \textrm{\textasciicircum} haben immer 2 Operanten.
+    \item die Operatoren $+$ und $-$ haben entweder 1 oder 2 Operanden.
+    \item die Operatoren $*$, $/$, und \textrm{\textasciicircum} haben immer 2 Operanden.
     \item die Operanden der Operatoren  sind Algebraische Ausdrücke.
   \end{enumerate}
 
@@ -255,6 +275,7 @@ wurde die Anzahl möglicher Operatoren reduziert.
   gegenüber einem Ausdruck mit niedrigerem Klammerlevel.
   Es gelten folgende Regeln für die Operatorrangfolge \lab{def:operatorrangfolge} bei gleichem Klammerlevel:
 
+  \begin{figure}[h]
   \begin{center}
     Höchste Priorität \\
     \textrm{\textasciicircum} \\
@@ -262,6 +283,7 @@ wurde die Anzahl möglicher Operatoren reduziert.
     \textrm{+ -} \\
     Niedrigste Priorität
   \end{center}
+  \end{figure}
 
   Falls 2 Operatoren dieselbe Priorität haben (z. B. + und -) hat 
   der rechte Operator die höhere Priorität.
@@ -269,19 +291,21 @@ wurde die Anzahl möglicher Operatoren reduziert.
   die höhere Priorität hat.
 \end{defin}
 
+\subsubsection{Grammatik eines konventionellen Ausdrucks}
+
 Um aus diesen Regeln einen Algorithmus zu bauen, ist es hilfreich, 
-eine Grammatik für einen mathematischen Ausdruck unter Beachtung der eben definierten Regeln 
-in Form einer Backus-Naur-Form zu definieren. 
+eine Grammatik für einen mathematischen Ausdruck unter Beachtung der Definition der konventionellen Struktur 
+in Form einer sogenannten Backus-Naur-Form nach \citeauthor{A_COMP} \cite{A_COMP} zu definieren. 
 
 \begin{defin}
-  Eine \textbf{Backus-Naur-Form} (BNF) ist nach der Definition von \citeauthor{A_COMP} \cite{A_COMP}
+  Eine \textbf{Backus-Naur-Form} (BNF) ist  
   eine Notationsform, um die Grammatik von Sprachen zu definieren. 
-  Der Syntax einer Backus-Naur-Form ist sehr einfach zu verstehen, da es nur 3 Symbole gibt.  
+  Die Syntax einer Backus-Naur-Form besteht aus 3 Symbolen.
 
   \begin{table}[h]
   \begin{tabular}{|l|l|}
   \hline
-    Zeichen     & Bedeutung               \\ \hline
+    Zeichen     & Bedeutung               \\ \hline \hline
     ::=         & Ist definiert als       \\ \hline
     |           & Oder                    \\ \hline
     <X>         & Name einer Kategorie X  \\ \hline
@@ -308,7 +332,7 @@ lässt sich folgender Algorithmus formulieren
   \begin{enumerate}
     \item Überprüfe, ob der gegebene String der 1. Option der jeweiligen Definition entspricht.
     \item Ist die Definition abhängig von einer weiteren Definition, so überprüfe ob der String oder Teilstring auch der Kinddefinition entspricht.
-    \item Entspricht der String der Definition, so erweitere den Baum mit dem passenden Knoten / Blatt.
+    \item Entspricht der String der Definition, so erweitere den Baum mit dem passenden Knoten beziehungsweise Blatt.
     \item Ist das nicht der Fall, so probiere die nächste Option. Gibt es keine weitere Option mehr, so muss es sich um einen invaliden String handeln.
   \end{enumerate}
 \end{defin}
@@ -335,9 +359,9 @@ Definition einer Backus-Naur-Form für mathematische Ausdrücke von \citeauthor{
 <exp>       ::= <exp> + <exp> | <exp> * <exp> | <exp> - <exp> | 
                 <exp> / <exp> | <exp> ^ <exp> | <int> | <symbol>
 <int>       ::= <digit> <int> | <digit>
-<digit>     ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<digit>     ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
 <symbol>    ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
-                o | p | q | s | t | u | v | w | x | y | z
+                o | p | q | r | s | t | u | v | w | x | y | z
 \end{minted}
 
 Diese Grammatik ist in der Lage, eine große Anzahl von Ausdrücken zu repräsentieren. 
@@ -366,14 +390,14 @@ Operand einer Addition erlaubt, aber Addition nicht als Operand der Multiplikati
 zulässt. Diese Änderung resultiert in folgendem BNF:
 
 \begin{minted}{bnf}
-<exp>     ::= <exp> + <exp> | <exp> - <exp> | 
-<term>    ::= <term> * <term> | <term> / <term> | <factor>
-<power>   ::= <power> ^ <power>
+<exp>     ::= <exp> + <exp> | <exp> - <exp> | <term>
+<term>    ::= <term> * <term> | <term> / <term> | <power>
+<power>   ::= <power> ^ <power> | <factor>
 <factor>  ::= <int> | <symbol 
 <int>     ::= <digit> <int> | <digit>
-<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 <symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
-              o | p | q | s | t | u | v | w | x | y | z
+              o | p | q | r | s | t | u | v | w | x | y | z
 \end{minted}
 
 Für den Term $6+3*4$ gibt es nur noch einen möglichen Baum,
@@ -409,19 +433,19 @@ Mit allen diesen Änderungen sieht die Backus-Naur-Form nun folgendermaßen aus:
 <power>   ::= <factor> ^ <power> | <factor>
 <factor>  ::= ( <exp> ) | <int> | <symbol> 
 <int>     ::= <digit> <int> | <digit>
-<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+<digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
 <symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
-              o | p | q | s | t | u | v | w | x | y | z
+              o | p | q | r | s | t | u | v | w | x | y | z
 \end{minted}
 
 Der Algorithmus, der auf dieser Backus-Naur-Form basiert und zum Parsen eines Strings in einen
-Baum mathematischer Ausdrücke \lab{def:baum} dient kann im Source Code unter dem Pfad /server/cas/parse.ts 
+Baum mathematischer Ausdrücke \lab{def:baum} dient, kann im Source Code unter dem Pfad /server/cas/parse.ts 
 oder online über \url{https://github.com/Flosi23/cas/blob/main/server/cas/parse.ts} eingesehen werden. \newline
 Außerdem bietet sich die Möglichkeit das Verhalten des Algorithmus auf der Website  \url{https://cas.dotenv.de}
 direkt selbst auszuprobieren. Dafür muss ein mathematischer Ausdruck welcher der konventionellen Struktur 
 entspricht \lab{def:konventionelle_struktur}
-(Dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
-in das Eingabefeld eingeben und der Knopf \glqq Calculate\grqq{}  gedrückt werden. 
+(dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
+in das Eingabefeld eingegeben und der Knopf \glqq Calculate\grqq{}  gedrückt werden. 
 Der vom Algorithmus generierte Baum kann dann unter dem Reiter \glqq Expression Tree\grqq{} eingesehen werden.
 
 \section{Automatische Vereinfachung}
@@ -432,9 +456,9 @@ Jeder Ausdruck wird automatisch vereinfacht, bevor andere Operationen angewendet
 Motivation hinter der automatischen Vereinfachung ist es, den Term in eine einheitliche und simplere Form zu bringen, 
 damit man ihn mit anderen Termen vergleichen und damit rechnen kann. 
 
-\begin{example}
+\begin{example} \normalfont
 Nimmt man den Term $3+x+y$ so gibt es aufgrund des Kommutativgesetzes 6 verschiedene Möglichkeiten diesen
-niederzuschreiben ohne, dass sich sein Ergebnis verändert
+niederzuschreiben ohne, dass sich sein Ergebnis verändert.
 \begin{enumerate}
   \item $3+x+y$
   \item $3+y+x$
@@ -450,7 +474,7 @@ vor der automatischen Vereinfachung nicht als gleich angesehen werden. Ohne eine
 verglichen werden.
 Wieso das problematisch ist, lässt sich an einem einfachen Beispiel zeigen.
 
-\begin{example}
+\begin{example} \normalfont
   Nehme man den Term $6xy+8yx$. Für einem Menschen ist klar ersichtlich, dass man diesen zu $14xy$ vereinfachen kann.
   Ein Computeralgebrasystem könnte diese Vereinfachung aber nicht vornehmen, da es die Terme $xy$ und $yx$ nicht als gleich
   ansehen und folglich nicht addieren würde. 
@@ -462,48 +486,43 @@ Zuletzt sollen auch alle Zahlenwerte so weit zusammengerechnet werden wie mögli
 (wie etwa das Distributivgesetz) angewendet werden, um den Term zu vereinfachen.
 
 \begin{defin}
-  Basierend auf der Definition \citeauthor{CAS_EA}s \cite[90 92]{CAS_EA} gilt ein Term als
+  Basierend auf der Definition \citeauthor{CAS_EA}s \cite[90 - 92]{CAS_EA} gilt ein Term als
   \textbf{vollständig vereinfacht}, wenn die folgenden Bedingungen erfüllt sind:
   \begin{enumerate}
-    \item $+$ ist ein Operator mit mindestens zwei Operanden (aufgrund des Assoziativgesetzes ist es möglich, 
-          dass Plus n viele Operanden haben kann) von denen maximal 1 Operand eine Zahl oder ein Bruch sein darf 
-          (andernfalls könnte man den Ausdruck noch weiter zusammenfassen).
-    \item $*$ ist ein Operator mit mindestens zwei Operanden, von denen keiner ein Produkt sein darf. 
-          Auch eine Summe darf kein Operand einer Multiplikation sein, da diese immer mithilfe des Distributivgesetzes
-          vereinfacht werden kann.
-          Außerdem darf nur maximal ein Operand eine Zahl oder ein Bruch sein. 
-    \item Zahlen müssen in Summen und Produkten immer der 1. Operand sein.
-    \item Der Operator $-$ darf nicht vorkommen, da er immer als Produkt mit -1 dargestellt werden kann.
-    \item Auch der Operator $/$ darf nicht vorkommen, da man einen Quotienten immer als Produkt oder numerischen Bruch darstellen kann.
-    \item Ein Quotient, der einen Bruch bei dem sowohl Zähler, und Nenner nicht Null und natürliche Zahlen sind aufweist, 
-          muss als Bruch dargestellt werden. Außerdem muss der Nenner größer als eins und der größte gemeinsame Teiler eins sein.
-    \item Bei einer Potenz $v^n$ muss $n$ eine natürliche Zahl sein. Außerdem darf $v$ keine eine Zahl, Bruch, Potenz oder ein Produkt sein
+    \item $+$ ist ein Operator mit mindestens zwei Operanden von denen maximal 1 Operand eine rationale Zahl und keiner eine Summe ist. 
+    \item $*$ ist ein Operator mit mindestens zwei Operanden, von denen keiner ein Produkt oder eine Summe ist. 
+          Maximal ein Operand ist eine rationale Zahl. 
+    \item Rationale Zahlen sind in Summen und Produkten immer der 1. Operand.
+    \item Die Operatoren $-$ und $/$ kommen nicht vor.
+    \item Ein Quotient $\frac{u}{v}$, wobei $u \in \mathbf{N}$ und $v \in \mathbf{N}\setminus{\{0\}}$, 
+          wird als Bruch dargestellt. Für den Bruch $\frac{u}{v}$ gilt: $v > 1$, $u$ und $v$ teilerfremd. 
+    \item Für einer Potenz $v^n$ gilt: $v$ ist keine Potenz oder Produkt.
   \end{enumerate}
 \end{defin}
 
 \subsection{Transformationen}
 
 Folgende Transformationen \citeauthor{CAS_MM}s \cite[64 - 79]{CAS_MM}
-stellen die Grundlage eines jeden Algorithmus der automatischen Vereinfachung dar und können,
-wenn richtig angewandt einen Term vollständig vereinfachen.
+sind Grundlage jedes Algorithmus zur automatischen Vereinfachung und können,
+wenn richtig angewandt, einen Term vollständig vereinfachen.
 
 \subsubsection{Distributive Transformation}
 
 \begin{defin}
   \label{def:distributive_transformation}
   Bei der \textbf{distributiven Transformation} werden in Summen 
-  gleiche Terme mit konstanten Koeffizienten basierend auf dem Distributivgesetz vereinfacht, 
+  gleiche Terme mit konstanten Koeffizienten mit Hilfe des Distributivgesetzes vereinfacht, 
   indem ihre Koeffizienten miteinander addiert werden. 
-  Ist einer der Operanden einer Multiplikation eine Summe so werden die anderen Operanden
+  Ist einer der Operanden einer Multiplikation eine Summe, so werden die anderen Operanden
   der Multiplikation mit den Operanden der Summe multipliziert.
 \end{defin}
 
-\begin{example}
+\begin{example} \normalfont
   Anwendung der distributiven Transformation bei einer Summe: \newline
   $2x + y + \frac{3}{2}x = \frac{7}{2}x + y$
 \end{example}
 
-\begin{example}
+\begin{example} \normalfont
   Anwendung der distributiven Transformation bei einer Multiplikation: \newline
   $6 * x * (3 + y) = 6 * (3x + xy) = 18x + 6xy$
 \end{example}
@@ -512,12 +531,12 @@ wenn richtig angewandt einen Term vollständig vereinfachen.
 
 \begin{defin}
   \label{def:assoziative_transformation}
-  Existiert ein Term $U$, der eine Summe bzw. ein Produkt ist, und einer der Operanten $S$ ist auch eine Summe 
-  bzw. ein Produkt, so werden die Operatoren von $S$ zu $U$ addiert. 
-  Diese Transformation wird immer vor der Distributiven Transformation ausgeführt.
+  Existiert ein Term $U$, der eine Summe oder ein Produkt ist, und einer der Operanden $S$ ist auch eine Summe 
+  oder ein Produkt, so werden die Operanden von $S$ zu $U$ addiert. 
+  Diese Transformation wird immer vor der Distributiven Transformation angewendet.
 \end{defin}
 
-\begin{example}
+\begin{example} \normalfont
   $2*(x*y) = 2*x*y$
 \end{example}
 
@@ -530,7 +549,7 @@ wenn richtig angewandt einen Term vollständig vereinfachen.
   um eine einheitliche Form zu erreichen.
 \end{defin}
 
-\begin{example}
+\begin{example} \normalfont
   $x+y+2 = 2+x+y$
 \end{example}
 
@@ -554,7 +573,7 @@ wenn richtig angewandt einen Term vollständig vereinfachen.
   Ein Faktor des Produkts (der Nenner des Quotienten) ist eine Potenz mit der Basis des Nenners und dem Exponenten $-1$.
 \end{defin}
 
-\begin{example}
+\begin{example} \normalfont
   $u/v = u * v^{-1}$
 \end{example}
 
@@ -565,11 +584,11 @@ Jede unäre Differenz wird durch eine Multiplikation mit -1 ersetzt.
 Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
 \end{defin}
 
-\begin{example}
+\begin{example} \normalfont
   $-v = -1 * v$
 \end{example}
   
-\begin{example}
+\begin{example} \normalfont
   $u - v = u + (-1) * v $
 \end{example}
 
@@ -587,7 +606,7 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
             0^w = \left\{
                 \begin{array}{ll}
                     0         & w \in \mathbf{Q} \textrm{ and } w > 0 \\
-                    undefined & 
+                    undefined & \textrm{sonst}
                 \end{array}
             \right.$
     \item $1^w = 1$
@@ -595,7 +614,7 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
           v^0 = \left\{
               \begin{array}{ll}
                   1         & v \neq 0 \\
-                  undefined & v = 0 
+                  undefined & \textrm{sonst}
               \end{array}
           \right.
           $
@@ -609,10 +628,10 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
   Die numerischen Transformationen definieren, wie rationale Zahlen in Termen vereinfacht werden sollen.
 
   \begin{enumerate}
-    \item Konstanten in einem Produkt werden miteinander multipliziert. $3*2*x = 6*x$
-    \item Konstanten in einer Summe werden miteinander addiert. $3+3+x = 6+x$
-    \item Potenzen, deren Basis sowie Exponent Konstanten sind, werden berechnet. $3^2 = 9$
-    \item Brücke werden so weit wie möglich gekürzt. $\frac{12}{8} = \frac{3}{4}$
+    \item Konstanten in einem Produkt werden miteinander multipliziert (z.B.: $3*2*x = 6x$).
+    \item Konstanten in einer Summe werden miteinander addiert (z.B.: $3+3+x = 6+x$).
+    \item Potenzen, deren Basis sowie Exponent Konstanten sind, werden berechnet (z.B.: $3^2 = 9$).
+    \item Brüche werden so weit wie möglich gekürzt (z.B.: $\frac{12}{8} = \frac{3}{4}$).
   \end{enumerate}
 \end{defin}
 
@@ -620,13 +639,13 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
 \subsection{Algorithmen}
 
 Basierend auf diesen Transformationen lassen sich nun Algorithmen für die Vereinfachung von
-Differenzen, Divisionen, Potenzen, Additionen, Summen und Produkten formulieren.
+Differenzen, Divisionen, Potenzen, Summen und Produkten formulieren.
 
 \subsubsection{Vereinfachung einer Differenz}
 Bei der Vereinfachung einer Differenz wird nur die Differenzen-Transformation \lab{def:differenzen_transformation}
 angewandt.
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -652,7 +671,7 @@ angewandt.
 Sind Zähler und Nenner rationale Zahlen, wird die Division zu einem Bruch umgeschrieben.
 Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} angewandt.
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -666,17 +685,17 @@ Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} ang
     \end{minipage}
   \end{figure}
   Der Term $\frac{2}{x}$ wird in ein Produkt umgeschrieben und dann so weit es geht vereinfacht. In diesem Fall
-  ist der Term allerdings schon vollständig vereinfacht.
+  ist das Produkt allerdings schon vollständig vereinfacht.
 \end{example}
 
 \subsubsection{Vereinfachung einer Potenz}
 \begin{enumerate}
-  \item Ist die Basis 0, wird die Identitäten-Transformation 4 \lab{def:identitaeten_transformation} angewandt.
+  \item Ist die Basis 0, wird die 4. Identitäten-Transformation \lab{def:identitaeten_transformation} angewandt.
   \item Ist der Exponent eine ganze Zahl:
         \begin{enumerate}
           \item Ist der Exponent 0 oder 1, wird die 6. beziehungsweise 7. Identitäten-Transformation
                 \lab{def:identitaeten_transformation} angewandt.
-          \item Ist die Basis eine rationale Nummer, so wird die 3. numerische Transformation
+          \item Ist die Basis eine rationale Zahl, so wird die 3. numerische Transformation
                 \lab{def:numerische_transformation} und auf deren Ergebnis die numerische 
                 Transformation 4 \lab{def:numerische_transformation} angewandt.
           \item Ist die Basis eine Potenz, wird die 2. Potenz-Transformation \lab{def:potenz_transformation} angewandt.
@@ -685,7 +704,7 @@ Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} ang
   \item Trifft keiner der oberen Fälle zu, wird nichts vereinfacht.
 \end{enumerate}
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -703,7 +722,7 @@ Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} ang
   da er schon vollständig vereinfacht ist.
 \end{example}
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h!]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -719,7 +738,7 @@ Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} ang
   Der Term ${x^2}^2$ wird mithilfe der 3. Potenz-Transformation vereinfacht. 
 \end{example}
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -742,13 +761,14 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
 \begin{enumerate}
   \item Assoziative Transformation \lab{def:assoziative_transformation}.
   \item Numerische Transformation 1 und 4 \lab{def:numerische_transformation}. 
-        Im selben Schritt werden gleiche Terme miteinander multipliziert: Anwendung der Potenz-Transformation 1 
+        Im selben Schritt wird die distributive Transformation angewandt und
+        gleiche Terme miteinander multipliziert: Anwendung der 1. Potenz-Transformation
         \lab{def:potenz_transformation}, wenn beide Terme Potenzen mit gleicher Basis sind.
   \item Identitäten-Transformation 2 und 3 \lab{def:identitaeten_transformation}.
   \item Kommutative Transformation \lab{def:kommutative_transformation}.
 \end{enumerate}
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -785,7 +805,7 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
   \item Kommutative-Transformation \lab{def:kommutative_transformation}.
 \end{enumerate}
 
-\begin{example}
+\begin{example} \normalfont
   \begin{figure}[h]
     \begin{minipage}{.5\textwidth}
       \centering
@@ -824,14 +844,14 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
 \end{example}
 
 \subsubsection{Vereinfachung eines Ausdrucks}
-Alle einzelnen Algorithmen werden in einem großen Vereinfachung Algorithmus kombiniert, 
+Alle einzelnen Algorithmen werden in einem Algorithmus kombiniert, 
 der zuerst alle Operanden vereinfacht, und dann abhängig vom Typ des Ausdrucks die angemessene Vereinfachung vornimmt. \\
 \newline
 Ist der Ausdruck:
 \begin{enumerate}
   \item Undefined → undefined.
   \item Ein Symbol oder eine ganze Zahl → Ausdruck wird nicht weiter vereinfacht.
-  \item Ein Bruch → Der Bruch wird so weit gekürzt wie möglich.
+  \item Ein Bruch → Anwenden der 4. numerischen Transformation. 
   \item Eine Potenz → Vereinfachung einer Potenz.
   \item Eine Division → Vereinfachung einer Division.
   \item Ein Produkt → Vereinfachung eines Produkts.
@@ -839,10 +859,10 @@ Ist der Ausdruck:
   \item Eine Differenz → Vereinfachung einer Differenz
 \end{enumerate}
 
-Die Algorithmen, welche einen mathematischen Term vereinfachen können im Source Code unter
+Die Algorithmen, welche einen mathematischen Ausdrck vereinfachen, können im Source Code unter
 dem Pfad /server/cas/simplify oder online über \url{https://github.com/Flosi23/cas/tree/main/server/cas/simplify}
 eingesehen werden.
-Auch hier bietet sich zudem die Möglichkeit das Verhalten der Algorithmen auf der Website 
+Wie auch in Abschnitt \ref{abschnitt:parsen} bietet sich zudem die Möglichkeit das Verhalten der Algorithmen auf der Website 
 \url{https://cas.dotenv.de} selbst zu untersuchen. Der vereinfachte Baum ist nach Eingabe des
 Ausdrucks unter dem Reiter \glqq Simplified Expression Tree\grqq{} zu finden.
 
@@ -852,13 +872,13 @@ Modern Computeralgebrasysteme sind kein Hexenwerk. Komplizierte Operationen
 werden in immer kleinere Teilprobleme unterteilt bis das 
 Problem für einen Computer einfach lösbar ist. So kann man die Vereinfachung eines
 Ausdruckes unterteilen in die Vereinfachung einer Summe, Potenz, usw... Die Vereinfachung
-einer Summe lässt sich nun auf die Anwendung verschiedener Transformationen reduzieren.\\
+einer Summe lässt sich nun auf die Anwendung verschiedener Transformationen zurückführen.\\
 
 Was Computeralgebrasysteme aber so faszinierend macht, ist ihre Fülle an Funktionen und die Geschwindigkeit 
-in der diese angewandt werden. In diesen beiden Punkten schneidet das im Zuge dieser Arbeit
+mit der diese angewandt werden. In diesen beiden Punkten schneidet das im Zuge dieser Arbeit
 geschriebene Programm schlecht ab. Da es weder eine eigene Programmiersprache noch vielfältige Algorithmen
-zur Manipulation von Termen anbietet, kann es kaum als Computeralgebrasystem bezeichnet werden \lab{def:cas}.
-Viel mehr sollte es als ein Hilfsmittel zur Visualisierung der automatischen Vereinfachung und des Parsing der 
+zur Manipulation von Termen anbietet, kann es kaum als Computeralgebrasystem bezeichnet werden.
+Vielmehr sollte es als ein Hilfsmittel zur Visualisierung der automatischen Vereinfachung und des Parsing der 
 Benutzereingaben angesehen werden. Das Ziel des Programms und dieser Arbeit wurde somit erreicht.
 
 \section{Bibliografie}
