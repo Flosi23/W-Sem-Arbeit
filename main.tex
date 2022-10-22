@@ -63,8 +63,56 @@
 
 \begin{document}
 
-\maketitle
+Städtisches Louise-Schroeder-Gymnasium
+\hfill
+Oberstufenjahrgang 2020/2022
+
+\vspace{65pt}
+
+\begin{center}
+  {\huge Seminararbeit}
+\end{center}
+
+\vspace{35pt}
+
+{\huge Leitfach: Informatik}
+
+\vspace{85pt}
+
+\begin{center}
+  {\Huge \textbf{Vereinfachung von Termen mit Computeralgebrasystemen}}
+\end{center}
+
+\vspace{85pt}
+
+Verfasser: Simon Weckler \\
+Seminarleiter: Jürgen Ulshöfer \\
+Abgabetermin: 7.10.2022 \\
+
+\vspace{35pt}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  Bewertung             & Note  & Notenstufe in Worten  & Punkte  &     & Punkte  \\ \hline
+  schriftliche Arbeit   &       &                       &         & x3  &         \\ \hline
+  Abschlusspräsentation &       &                       &         & x1  &         \\ \hline
+  \multicolumn{4}{c}{Summe: } & & \\ \cline{6-6}
+  \multicolumn{4}{c}{Gesamtleistung nach § 29 (7) GSO = Summe:2 (gerundet)} & & \\  \cline{6-6}
+\end{tabular}
+\end{center}
+
+\vspace{35pt}
+
+\hrulefill
+
+Datum und Unterschrift der Seminarleiterin bzw. des Seminarleiters
+
+\newpage
+
 \tableofcontents
+
+\newpage
 
 \section{Einleitung}
 
@@ -201,8 +249,7 @@ eines Elternknotens sind seine Operanden, welche zusammengesetze \lab{def:zusamm
 \end{example}
 
 Von welchem Datentyp die Blätter und Knoten sind, ist ganz von der jeweiligen Implementierung abhängig.
-In dem für diese Arbeit geschriebenen Programm können folgende Ausdrücke Teil des Baumes sein:
-Welche Ausdrücke Teil des Baumes, in dem für diese Arbeit geschriebenen Programm sein können, ist in 
+Welche Ausdrücke, in dem für diese Arbeit geschriebenen Programm, Teil des Baumes sein können, ist in 
 Abbildung \ref{img:uml} zu sehen.
 
 \begin{figure}[h]
@@ -229,7 +276,7 @@ Hier wurden die Operatoren in Binäre und Nicht-Binäre Operatoren unterteilt.
   \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[scale=0.5]{trees/beispiel_non_binary_2.png}
-    \caption{$x+y*z$ als eine Summe mit 3 Kindern}
+    \caption{$x+y*z$ als eine nicht binäre Summe mit 3 Kindern}
   \end{minipage}
   \end{figure}
   Die Summe $x+y+z$ wird von Menschen normalerweise interpretiert als: $(x+y)+z$.
@@ -353,12 +400,13 @@ zu definieren, welche alle Aspekte der Definition
 eines mathematischen Ausdrucks in der konventionellen Struktur 
 \lab{def:konventionelle_struktur} berücksichtigt. Dabei dient die
 Definition einer Backus-Naur-Form für mathematische Ausdrücke von \citeauthor{BNF_PT}
-\cite{BNF_PT} als Vorlage.
+\cite{BNF_PT} als Vorlage. Damit die Grammatik nicht zu kompliziert wird, sind hier
+auch Zahlen mit führenden Nullen (z.B. 0023) erlaubt. 
 
 \begin{minted}{bnf}
 <exp>       ::= <exp> + <exp> | <exp> * <exp> | <exp> - <exp> | 
                 <exp> / <exp> | <exp> ^ <exp> | <int> | <symbol>
-<int>       ::= <digit> <int> | <digit>
+<int>       ::= <digit> | <digit><int>
 <digit>     ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
 <symbol>    ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
                 o | p | q | r | s | t | u | v | w | x | y | z
@@ -393,7 +441,7 @@ zulässt. Diese Änderung resultiert in folgendem BNF:
 <exp>     ::= <exp> + <exp> | <exp> - <exp> | <term>
 <term>    ::= <term> * <term> | <term> / <term> | <power>
 <power>   ::= <power> ^ <power> | <factor>
-<factor>  ::= <int> | <symbol 
+<factor>  ::= <int> | <symbol>
 <int>     ::= <digit> <int> | <digit>
 <digit>   ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 <symbol>  ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | 
@@ -444,8 +492,8 @@ oder online über \url{https://github.com/Flosi23/cas/blob/main/server/cas/parse
 Außerdem bietet sich die Möglichkeit das Verhalten des Algorithmus auf der Website  \url{https://cas.dotenv.de}
 direkt selbst auszuprobieren. Dafür muss ein mathematischer Ausdruck welcher der konventionellen Struktur 
 entspricht \lab{def:konventionelle_struktur}
-(dabei sollte vor allem beachtet werden, dass zum Beispiel der Term $3x$ als $3*x$ geschrieben werden muss)
-in das Eingabefeld eingegeben und der Knopf \glqq Calculate\grqq{}  gedrückt werden. 
+in das Eingabefeld eingegeben und der Knopf \glqq Simplify\grqq{}  gedrückt werden
+(dabei sollte vor allem beachtet werden, dass Term wie $3x$ als $3*x$ geschrieben werden müssen).
 Der vom Algorithmus generierte Baum kann dann unter dem Reiter \glqq Expression Tree\grqq{} eingesehen werden.
 
 \section{Automatische Vereinfachung}
@@ -597,7 +645,7 @@ Jede binäre Differenz $u-v$ wird durch eine Summe ersetzt.
 \begin{defin}
   \label{def:identitaeten_transformation}
   Die Identitäten-Transformation definiert folgende Regeln welchen im Umgang mit Termen, die
-  Einsen oder Nullen enthalten angewandt werden können
+  Einsen oder Nullen enthalten angewandt werden.
   \begin{enumerate}
     \item $u+0 = u$
     \item $u*0 = 0$
@@ -714,7 +762,7 @@ Sonst wird die Quotienten-Transformation \lab{def:quotienten-transformation} ang
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[scale=0.4]{trees/power/beispiel_1_2.png}
-      \caption{Anwendung der 3. numerische Transformation.}
+      \caption{Anwendung der 3. numerischen Transformation.}
     \end{minipage}
   \end{figure}
   Da der Exponent im Term $\frac{2}{3}^2$ eine ganze Zahl ist, wird hier die 3. numerische Transformation angewandt. 
@@ -784,7 +832,7 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
   \begin{figure}[h]
     \centering
     \includegraphics*[scale=0.5]{trees/product/beispiel_1_3.png}
-    \caption{Anwendung der 1. numerischen Transformation und der 1. Potenz-Transformation}
+    \caption{Anwendung der 1. numerischen Transformation und der 1. Potenz-Transformation.}
   \end{figure}
   In diesem Beispiel wird der Term $(2*x)*(3*x^2)$ betrachtet. Zuerst wird die assoziative Transformation angewandt und
   die Operanden des Produkts werden mit den Operanden der Operanden ersetzt. Im nächsten Schritt wird die 1. numerische 
@@ -846,7 +894,7 @@ Transformationen in genau dieser Reihenfolge angewendet werden.
 \subsubsection{Vereinfachung eines Ausdrucks}
 Alle einzelnen Algorithmen werden in einem Algorithmus kombiniert, 
 der zuerst alle Operanden vereinfacht, und dann abhängig vom Typ des Ausdrucks die angemessene Vereinfachung vornimmt. \\
-\newline
+
 Ist der Ausdruck:
 \begin{enumerate}
   \item Undefined → undefined.
@@ -881,7 +929,24 @@ zur Manipulation von Termen anbietet, kann es kaum als Computeralgebrasystem bez
 Vielmehr sollte es als ein Hilfsmittel zur Visualisierung der automatischen Vereinfachung und des Parsing der 
 Benutzereingaben angesehen werden. Das Ziel des Programms und dieser Arbeit wurde somit erreicht.
 
-\section{Bibliografie}
+\section{Literaturverzeichnis}
 \printbibliography[heading=none]
+
+\newpage
+
+„Ich erkläre hiermit, dass ich die Seminararbeit ohne fremde Hilfe angefertigt 
+und nur die im Literaturverzeichnis angeführten Quellen und Hilfsmittel verwendet habe.“
+
+\vspace{40pt}
+
+\begin{tabular}{llll}
+  ........................... & , den & ........................... \\ 
+  Ort                         &       & Datum                  
+\end{tabular}
+\hfill
+\begin{tabular}{l}
+  ...................................................... \\
+  Unterschrift
+\end{tabular}
  
 \end{document}
